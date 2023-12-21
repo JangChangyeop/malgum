@@ -97,7 +97,9 @@
 	}
 }
 
-/*화면이 width 1100 미만일 때 */
+/*********************************
+	화면이 width 1100 미만일 때 
+**********************************/
 @media screen and (max-width : 1100px){
 
 	/*mobileGnb style*/
@@ -229,8 +231,8 @@
 	.pc_text{
 		display: none;
 	}
-	div.mainWrap div.mainText h2{
-		font-size: 30px !important;
+	div#main div.mainWrap div.mainText h2{
+		font-size: 30px ;
 	}
 	div.mainWrap div.mainText p.m_text_1100{
 		display: block;
@@ -341,22 +343,22 @@
 		display: none;
 	}
 	div.footer_sns{
-		display: block;
+		position : relative;
+		left : 85px;
+		bottom :0px;
+		display: flex;
 		margin-top : 20px;
 	}
 
 	div.footer_sns ul li {
-		width: 44px;
-		height: 44px;	
-		text-indent: -99999px;
-		position : relative;
+		width: 40px;
+		height: 40px;	
+		text-indent: -9999px;
 		display: inline-block;
-		left : -490px;
-		bottom : -60px;
 		margin-right: 10px;
 	}
 	div.footer_sns ul li a {
-		display: block;
+		display: inline-block;
 		width: 100%;
 		height: 100%;
 	}
@@ -365,25 +367,28 @@
 		background-size: 100%;
 	}
 	div.footer_sns ul li:nth-child(2){
-		background-image: url(../img/main/icon_insta_m.png);
+		background-image: url(../img/main/icon_naver_m.png);
 		background-size: 100%;
 	}
 	div.footer_sns ul li:nth-child(3){
-		background-image: url(../img/main/icon_naver_m.png);
+		background-image: url(../img/main/icon_insta_m.png);
 		background-size: 100%;
 	}
 
 	div.footerWrap div.footerTextWrap {
+		width: 100%;
 		padding-left: 15px;
 	}
 	ul.footerNav {
 		margin-left: 15px;
 	}
-}
+}/*********************************
+	화면이 width 1100 미만일 때  끝end
+**********************************/
 
 
 /************************************
-		화면이 740px 보다 작을 때
+		화면이 740px 보다 작을 때 시작
 *************************************/
 @media screen and (max-width : 740px){
 
@@ -392,9 +397,163 @@
 	div#main{
 		height: 300px;
 	}
-	div.mainWrap div.mainText p.m_text{
+	div#main div.mainWrap div.mainText{
+		left : 15px;
+		top : 30px;
+	}
+	div#main div.mainWrap div.mainText>h2{
+		font-size: 24px;
+	}
+	div#main div.mainWrap div.mainText p.m_text{
 		font-size: 14px;
 		font-weight: blod;
 	}
-}
 
+	div#main div.mainWrap div.mainClock
+	{
+		width: 300px;
+		height: 300px;
+		right: -40px;
+	}
+	div.mainClock div.centerCircle{
+		top : 140px;
+		left : 155px;
+	}
+	div.mainClock div.hour{
+		top : 73px;
+		left : 165px;
+	}
+	div.mainClock div.minutes{
+		top : 58px;
+		left : 165px;
+	}
+	div.mainClock div.seconds{
+		top : 43px;
+		left : 165px;
+	}
+
+
+	/********************************
+		section awards style
+	**********************************/
+	section#awards{
+		padding: 60px 0px;
+	}
+
+	/********************************
+		section mainContent style
+	**********************************/
+	section#mainContent div.mcWrap{
+		padding: 30px 0px ;
+		margin-bottom : 0px;
+	}
+	div.mcTextBoxInner p.mcPText{
+		display: none;
+	}
+
+	div.mcTextBoxInner h2{
+		font-size: 20px;
+	}
+	div.mcTextBoxInner h2 span{
+		font-size: 14px;
+		line-height: 30px;
+		margin-left: 10px;
+	}
+	div.mcTextBoxInner p.mcLink{
+		line-height: 0px;
+		margin-top: 18px;
+	}
+
+	/*이미지 박스 영역 style*/
+	div.mcImgBox ul.mcImgList li:nth-child(5),
+	div.mcImgBox ul.mcImgList li:nth-child(6),
+	div.mcImgBox ul.mcImgList li:nth-child(7),
+	div.mcImgBox ul.mcImgList li:nth-child(8) {
+		display: none;
+	}
+	div.mcImgBox ul.mcImgList li{
+		width: 50%;
+	}
+
+
+	/*************************
+ 	section 4번째 malgumStory style
+* **************************/
+	section#malgumStory{
+		margin-top: 70px;
+		padding: 60px 0px;
+	}
+	div.msTextBox{
+		margin-bottom: 0px;
+	}
+
+	div.msTextBox>h2{
+		font-size: 26px;
+	}
+	div.msTextBox>h2+p{
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+	div.msContentBox div.msContentList>div.msContent{
+		margin : 30px 1%;
+	}
+
+
+	/*************************
+ 	마지막 section main bottom style
+* **************************/
+	div.textWrap {
+		padding: 30px;
+		height: auto;
+	}
+	div.textBox div.mbs_title h3{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	div.textBox div.mbs_title h4{
+		font-size: 16px;
+	}
+	div.textBox a.btn_plus{
+		position : absolute;
+		top : 20px; 
+		right : 20px;
+		width: 30px; 
+		height: 30px;
+	}
+
+	/*****************************
+		footer style
+	*****************************/
+	footer#footer{
+		margin-top: 148px;
+	}
+	ul.footerNav li>a{
+		padding: 0px 15px;
+		font-weight: nomal;
+		font-size: 13px;
+	}
+	ul.footerNav {
+		margin-left: 30px;
+	}
+	div.footerTextWrap div.footerTextBox{
+		text-align: center;
+	}
+	div.footerTextWrap div.footerTextBox h2 a{
+		display: inline-block;
+		position : relative;
+		top : -10px;
+	}
+	div.footerTextBox div.footer_info{
+		text-align: left;
+		padding-left: 3px;
+		font-size: 13px;
+		font-weight: normal;
+	}
+	
+
+	div.footer_sns ul li{
+		position : relative;
+		
+	}
+	
+}	

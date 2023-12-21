@@ -232,7 +232,7 @@ div#main div.mainWrap div.mainText{
 	z-index: 10;
 	color : white;
 }
-div#main div.mainWrap div.mainText>h2{
+div.mainText>h2{
 	margin-bottom: 20px;
 	font-size: 42px;
 	font-weight: 500;
@@ -546,7 +546,7 @@ div.mcImgBox {
 div.mcImgBox  ul.mcImgList{
 	width: 100%;
 	max-width: 1900px;
-	border : 1px solid black;
+/*	border : 1px solid black;*/
 	font-size: 0px;
 	text-align: center;
 	padding-left: 0;
@@ -898,9 +898,11 @@ div.footerTextBox div.footer_info{
 	font-weight: nomal;
 }
 div.footerTextBox div.footer_info ul{
+	display: block;
 	margin-left: -32px;
 	margin-top: -16px;
 	width: 100%;
+	overflow: hidden;
 /*	border: 1px solid red;*/
 }
 div.footerTextBox div.footer_info ul li{
@@ -908,9 +910,7 @@ div.footerTextBox div.footer_info ul li{
 	margin-right: 15px;
 }
 div.footerTextBox div.footer_info p.copy{
-	position: absolute;
-	left : 120px;
-	top : 48px;
+	margin-top :-15px;
 }
 
 /*footerTel style*/
