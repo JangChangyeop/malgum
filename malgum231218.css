@@ -1,0 +1,936 @@
+/*************************
+		 * 	reset style
+		 * ***********************/
+		 *{
+		 	padding: 0;
+		 	margin: 0;
+		 	list-style: none;
+		 	box-sizing: border-box;
+		 }
+		 a {
+		 	color : inherit;
+		 	text-decoration: none;
+		 }
+		 ul#gnbL li a:hover , ul#gnbR li a:hover ,ul.dept2 > li a:hover, ul.dept3 > li a:hover{
+		 	color : #2CC1EA;
+		 }
+		 .hover {
+		 	color : #2CC1EA;
+		 }
+		 .on {
+		 	display: block !important;
+		 }
+		 .dept3on {
+		 	display: block !important;
+		 }
+		 .fontsize13{
+		 	font-size: 0.8em !important;
+		 }
+		 .blank{
+		 	opacity: 0;
+		 }
+
+/*************************
+	 	header style
+* ***********************/
+header#header {
+	position: fixed;
+	top : 0px;
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #dedede;
+	z-index: 999;
+	background-color : #FFFFFF;
+}
+div.header_top_wrap {
+	width: 1170px;
+width: 100%;
+	height: 100%;
+	margin : 0 auto;
+	position : relative;
+}
+/*************************
+	 	gnb style
+* ***********************/
+a#logo {
+	display: block;
+	width: 60px;
+	height: 57px;
+	text-indent: -9999px;
+	text-decoration: none;
+	background: url(../img/main/logo_new.png) no-repeat;
+	position : absolute;
+	left : 50%;
+	top : 20px;
+}
+nav#gnb {
+	width: 1170px;
+	height: 100%;
+	margin : 0 auto;
+	position : relative;
+/*			border : 1px solid red;*/
+}
+/*************************
+	 	gnbL style
+* ***********************/
+ul#gnbL{
+	position : absolute;
+	left : 0px;
+}
+
+ul#gnbL li{
+	float: left;
+}
+
+ul#gnbL li a, ul#gnbR li a{
+	display: block;
+	height: 100px;
+	padding: 0 37px;
+	font-size: 17px;
+	font-weight: bold;
+	color : black;
+}
+
+ul#gnbL li a span, ul#gnbR li a span{
+	display: inline-block;
+	line-height: 40px;
+	margin-top: 45px;
+}
+/*************************
+	 	gnbR style
+* ***********************/
+ul#gnbR{
+	position : relative;
+	right : 140px;
+	top : 0px;
+	float: right;
+}
+ul#gnbR li {
+	float: left;
+}
+/*************************
+	 	상담하기 style
+* ***********************/
+div#consultWrap{
+	width: 150px;
+	height: 90px;
+	position : absolute;
+	border: 1px solid blue;
+	right : 0px;
+	top : 5px;
+}
+div#consultWrap a{
+	display: block;
+	width: 150px;
+	height: 90px;
+	position: absolute;
+	text-align: center;
+	line-height: 110px;
+	font-size: 15px;
+}
+/********************************
+	 	dept2Wrap style
+* *******************************/
+div.dept2Wrap{
+	display: none;
+	position: absolute;
+	left: 50%;
+/*		    margin-left: -420px;*/
+	min-width: 160px;
+	box-sizing: border-box;
+	background-color: #fff;
+	top: 99px;
+	padding: 0px 0px 20px;
+	border: 1px solid #e1e1e1;
+	z-index: 3;
+}
+/********************************
+	 	marginLeft style
+* *******************************/
+.marginLeft_minus400 {
+	margin-left : -400px;
+}
+.marginLeft_minus255{
+	margin-left : -255px;
+}
+.marginLeft_140{
+	margin-left : 140px;
+}
+.marginLeft_295{
+	margin-left : 295px;
+}
+/********************************
+	 	서비스 소개 Dept2 style
+* *******************************/
+div.serviceDept2{
+	width: 100%;
+/*			border : 1px solid red;*/
+margin : 0 auto;
+position : absolute;
+top : 100px;
+display: none;
+background-color: #fff;
+width: 100%;
+}
+ul.dept2 {
+	width: 1100px;
+	margin : 0 auto;
+/*			border : 1px solid blue;*/
+}
+ul.dept2 > li {
+	float: left;
+	display: inline-block;
+/*			border : 1px solid blue;*/
+font-size: 17px;
+margin-right: 80px;
+font-weight: bold;
+padding: 30px 0px 40px 0px;
+}
+ul.dept3 > li {
+	display: flex;
+	justify-content: space-between;
+/*			border : 1px solid black;*/
+font-size: 14px;
+font-weight: normal;
+/*			padding: 17px 0px;*/
+}
+ul.dept3 > li:nth-child(1){
+	margin-top: 15px;
+}
+ul.dept2 > li a, ul.dept3 > li a {
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+
+
+/*************************
+ 	main section style
+* **************************/
+div#main {
+	width: 100%;
+	height: 500px;
+	background-color: #94d6e2;
+	position : relative;
+	margin-top : 100px;
+	
+}
+div#main div.mainWrap {
+	width: 1100px;
+	height: 100%;
+	margin : 0 auto;
+/*	border : 1px solid red;*/
+	position : relative;
+}
+
+/*text style*/
+div#main div.mainWrap div.mainText{
+	position: absolute;
+	top : 150px;
+	left : 50px;
+	z-index: 10;
+	color : white;
+}
+div#main div.mainWrap div.mainText>h2{
+	margin-bottom: 20px;
+	font-size: 42px;
+	font-weight: 500;
+}
+div#main div.mainWrap div.mainText>p.pc_text{
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 20px;
+}
+p.m_text{
+	display: none;
+}
+
+
+/*clock style*/
+div#main div.mainWrap div.mainClock{
+	width: 500px;
+	height: 500px;
+	background: url(../img/main/clock_bg.png);
+	background-size: cover;
+	position : absolute;
+	right: 10px;
+	top : 0px;
+}
+div.mainClock div.centerCircle{
+	position : absolute;
+	border : 12px solid black;
+	border-radius: 50%;
+	top : 240px;
+	left : 260px;
+	box-shadow: 0 0 8px #000000;
+
+}
+div.mainClock div.hour{
+	background-color: black;
+	border-radius: 2px;
+	height: 26%;
+	width: 6px;
+	position : absolute;
+	top : 125px;
+	left : 269.5px;
+	box-shadow: 0 0 8px #000000;
+	transform-origin: bottom;
+}
+div.mainClock div.minutes{
+	background-color: black;
+	border-radius: 2px;
+	height: 31%;
+	width: 4px;
+	position : absolute;
+	top : 100px;
+	left : 271px;
+	box-shadow: 0 0 8px #000000;
+	transform-origin: bottom;
+}
+div.mainClock div.seconds{
+	background-color: #e82047;
+	border-radius: 2px;
+	height: 36%;
+	width: 2px;
+	position : absolute;
+	top : 70px;
+	left : 272px;
+	box-shadow: 0 0 8px #000000;
+	transform-origin: bottom;
+}
+
+/*************************
+ 	awrads section style
+ 	w	1160이상
+* **************************/
+section#awards {
+	width: 	100%;
+	background-color: #F7F7F7;
+	position : relative;
+	top : -12px;
+	padding: 100px 0px;
+}
+section#awards div.awardsWrap{
+	width: 1100px;
+	margin : 0 auto;
+/*	border : 1px solid red;*/
+}
+
+section#awards div.awardTitle {
+	border-bottom: 1px solid #D7D7D7;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+section#awards div.awardTitle img {
+	margin-right: 23px;
+}
+section#awards div.awardTitle h2 {
+	display: inline-block;
+	position : relative;
+	top : 15px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.awardTitle h2 span.awardTitleSpan {
+	font-weight: normal;
+	margin-left: 15px;
+}
+/*awardList sytle*/
+div.awardList{
+	display : flex;
+	justify-content: space-between;
+}
+div.awardList>a{
+	display: block;
+	width: 	204px;
+	height: 130px;	
+	border : 1px solid #D7D7D7;
+	border-radius: 6px;
+	background: url(../img/main/awards_wa.png) no-repeat;
+	background-size: 25px;
+	background-position: right 15px bottom 14px;
+	background-color: #ffffff;
+	padding: 14px 15px;
+}	
+
+div.awardList a ul {
+	width: 100%;
+	height: 100%;
+	position : relative;
+}
+div.awardList a ul li{
+	position : absolute;
+}
+div.awardList a ul li.awardName{
+	left : 0px; 
+	top : 0px;
+	font-size: 17px;
+	font-weight: bold;
+}
+div.awardList a ul li.awardYear {
+	right: 0px;
+	top : 0px;
+	font-size: 15px;
+}
+div.awardList a ul li.awardCate {
+	left : 0px;
+	bottom : 0px; 
+	font-size: 15px ;
+/*	font-weight: bold;*/
+	
+}
+div.awardList a ul li.awardCate em {
+	display: block;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*gdwebAward style*/
+section#awards div.secondListWrap{
+
+/*	border : 1px solid red;*/
+	margin-top : 70px;
+	display: flex;
+	flex-direction: row;
+}
+div.secondListWrap div.gdwebAward{
+	width: 59.3%;
+	margin-right: 1.8%;
+}
+div.gdwebAward div.awardList>a {
+	background: url(../img/main/awards_gdweb.png) no-repeat;
+	background-size: 25px;
+	background-position: right 15px bottom 14px;
+	background-color: #ffffff;
+}
+
+/*Kaward style*/
+section#awards div.Kaward{
+	width: 38.9%;
+}
+section#awards div.Kaward div.awardTitle h2{
+	text-transform : none;
+}
+section#awards div.Kaward li.awardCate{
+	bottom : 5px;
+}
+div.Kaward div.awardList>a {
+	background: url(../img/main/awards_ict.png) no-repeat;
+	background-size: 25px;
+	background-position: right 15px bottom 14px;
+	background-color: #ffffff;
+}
+
+/*etcAward style*/
+section#awards div.etcAward{
+	margin-top : 70px;
+}
+section#awards div.etcAward div.awardTitle{
+	width: 80%;
+}
+section#awards div.etcAward div.awardTitle h2{
+	text-transform : none;
+}
+section#awards div.etcAward div.awardList{
+	color : white;
+}
+section#awards div.etcAward li.awardCate {
+	font-size: 0.7em;
+}
+section#awards div.etcAward li.awardCate>em{
+	display: inline-block;
+	font-size: 15px;
+}
+div.etcAward div.awardList>a:first-child{
+	background-color: black;
+	
+}
+div.etcAward div.awardList>a{
+	background-color: #E41F29;
+	background-image: none;
+}
+section#awards div.etcAward img.etcAward_bg{
+	position : absolute;
+	right : 50px;
+	bottom : 120px;
+	padding-left: 32px;
+}
+
+/*************************
+ 	section mainContent style
+* **************************/
+section#mainContent{
+	width: 100%;
+	
+}
+section#mainContent div.mcWrap{
+	padding: 100px 0px 0px 0px;
+	width: 1100px;
+	margin : 0 auto;
+	margin-bottom: 50px;
+}
+div.mcTextBoxInner h2 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 32px;
+	margin-bottom: 20px;
+	/*display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;*/
+}
+div.mcTextBoxInner h2 span{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	margin-left: 20px;
+	vertical-align: bottom;
+}
+div.mcTextBoxInner p.mcPText{
+	font-size: 18px;
+	line-height: 26px;
+}
+div.mcTextBoxInner p.mcLink{
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 18px;
+}
+
+div.mcWrap div.mcTabBox{
+	width: 100%;
+	height: 30px;
+	position : relative;
+	z-index: 10;
+	margin-top: 10px;
+/*	border : 1px solid blue;*/
+}
+div.mcWrap div.mcTabBox ul.mcTab{
+	float: right;
+}
+div.mcWrap div.mcTabBox ul.mcTab li {
+	float: left;
+	padding: 0px 20px 0 21px;
+	position : relative;
+}
+div.mcWrap div.mcTabBox ul.mcTab li::before{
+	content : "";
+	position : absolute;
+	left : 0px;
+	top : 6px; 
+	width : 1px; 
+	height: 13px;
+	background-color: #d8d8d8;
+}
+div.mcWrap div.mcTabBox ul.mcTab li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+	line-height: 20px;
+	color : #a3a3a3;
+}
+
+/*mcImgBox style*/
+div.mcImgBox {
+	width: 100%;
+	max-width: 1900px;
+	margin : 0 auto;
+/*	border : 1px solid red;*/
+}
+div.mcImgBox  ul.mcImgList{
+	width: 100%;
+	max-width: 1900px;
+	border : 1px solid black;
+	font-size: 0px;
+	text-align: center;
+	padding-left: 0;
+}
+div.mcImgBox  ul.mcImgList li{
+	
+	display: inline-block;
+	width: 25%;
+}
+div.mcImgBox  ul.mcImgList li>a {
+	display: block;
+	/*width: 100%;
+	height: 100%;*/
+	position : relative;
+	overflow: hidden;
+}
+div.mcImgBox  ul.mcImgList li>a img{
+	display: block;
+	width: 100%;
+	vertical-align: top;
+
+}
+div.mcImgBox  ul.mcImgList li>a p {
+	color : #ffffff;
+	font-size: 13px;
+	line-height: 20px;
+	padding-top : 8px;
+	padding-left: 17px;
+	position: absolute;
+	bottom : 0px;
+	left : 20px;
+}
+div.mcImgBox  ul.mcImgList li>a p::before {
+	content : "";
+	position : absolute;
+	width: 24px;
+	height: 2px;
+	background-color: #ffffff;
+	left : 0px;
+	top : 0px;
+}
+
+
+
+/*************************
+ 	section 3번쨰 difStrategy style
+* **************************/
+/*차별화 전략 클릭 시 나오는 슬라이드 탭 스타일*/
+div.dsSlideBox {
+	display: none;
+}
+/*전체를 감싸는 box style*/
+section#difStrategy{
+	width: 100%;
+	padding: 110px 0px;
+	background-color: white;
+	position: relative;
+}
+section#difStrategy .dswrap {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*text 박스 style*/
+div.dswrap div.dsTextBox{
+	text-align: center;
+}
+div.dswrap div.dsTextBox>h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+div.dswrap div.dsTextBox>h2+p{
+	font-size: 18px;
+	padding-top : 10px; ;
+}
+
+/*contentBox 스타일*/
+div.dsContentBox{
+	width: 100%;
+	margin : 0 auto;
+}
+div.dsContentBox div.contentList {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.dsContentBox div.contentList>div {
+	border : 1px solid #dddddd;
+}
+
+/*contentBox img태그 스타일*/
+div.dsContentBox div.contentList img {
+	display: block;
+	margin : 0 auto;
+	padding: 50px 75px 35px 75px;
+}
+/*ds_BoxText p 태그 스타일*/
+div.ds_BoxText>p {
+	text-align: center;
+	padding-bottom : 25px;
+
+}
+
+
+/*************************
+ 	section 4번째 malgumStory style
+* **************************/
+section#malgumStory{
+	width: 100%;
+	position : relative;
+	padding: 110px 0px;
+	background-color: #f4f4f4;
+
+}
+
+section#malgumStory div.msWrap {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/*text 영역 style*/
+div.msTextBox{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+div.msTextBox>h2{
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom : 20px;
+}
+div.msTextBox>h2+p {
+	font-size: 18px;
+}
+
+/*content 영역 style*/
+div.msContentBox{
+	width: 100%;
+}
+div.msContentBox div.msContentList {
+	width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+	
+}
+div.msContentBox div.msContentList>div {
+	width: 23%;
+/*	border : 1px solid red;*/
+}
+
+/*맑음 이야기 img 스타일*/
+div.ms_c_imgbox {
+	height: 300px;
+	margin-bottom: 31px;
+}
+div.ms_c_imgbox>img {
+	display: block;
+	width: 100%;
+	background-size : cover;
+}
+div.ms_c_imgbox_m {
+	display:  none;
+}
+
+/*msContent text 스타일*/
+div.msContent div.ms_c_textbox{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	height: 52px;
+}
+
+/*ms_c_linkBox 스타일*/
+div.msContent div.ms_c_linkBox{
+	font-size: 12px;
+	position: relative;
+}
+div.msContent div.ms_c_linkBox span::after {
+	content: ">";
+	position: relative;
+	padding-left : 20px;
+}
+
+/*************************
+ 	마지막 section main bottom style
+* **************************/
+section#main_bottom_sec{
+	width: 100%;
+	position: relative;
+	height: 350px;
+/*	border : 1px solid red;*/
+}
+
+/*이미지 박스 스타일*/
+section#main_bottom_sec div.imgBox{
+	display: inline-block;
+/*	border : 1px solid blue;*/
+	width: 50%;
+	height: 100%;
+
+	position :absolute;
+	left : 0px;
+
+	background-image: url(../img/main/main_bottom_new.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+/*텍스트 박스 스타일*/
+div.textWrap {
+	width: 50%;
+	height: 100%;
+	position : absolute;
+	right: 0px;
+	padding: 54px 0px 60px 70px;
+	background-color: #333333;
+	color : white;
+}
+div.textBox div.mbs_title{
+	margin-bottom: 20px;
+}
+div.textBox div.mbs_title h3{
+	font-size: 31px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+div.textBox div.mbs_title h4{
+	font-size: 16px;
+	font-weight: bold;
+}
+div.textBox p {
+	font-size: 13px;
+}
+
+
+div.textBox a.btn_plus{
+	width: 47px;
+	height: 47px;
+	display: block;
+	text-indent: -99999px;
+	border : 1px solid white;
+
+	background: url(../img/main/icon_plus.png) no-repeat;
+	background-position: center center;
+}
+
+
+
+/*************************
+ 	푸터 footer 스타일
+* **************************/
+footer#footer {
+	width: 100%;
+	position : relative;
+	border-top : 1px solid #dedede;
+	padding-bottom: 50px;
+	bottom : 0px;
+}
+footer#footer div.footerWrap{
+	margin: 0 auto;
+}
+
+/*footerNav 스타일*/
+div.footerNavWrap{
+	width: 100%;
+	height: 70px;
+	position: relative;
+	border-bottom: 1px solid #dedede;
+}
+
+ul.footerNav{
+	width: 1100px;
+	margin: 0 auto;
+}
+ul.footerNav li {
+	float: left;
+	text-align: center;
+	position : relative;
+}
+
+ul.footerNav li>a {
+	display: block;
+	padding: 0 32px;
+	font-size: 14px;
+	colort : black;
+	line-height: 70px;
+	height: 70px;
+	position: relative;
+}
+ul.footerNav li:first-child a{
+	display: block;
+	margin-left: -64px;
+}
+ul.footerNav li>a::after {
+	content : "";
+	width: 1px;
+	height: 12px;
+	background-color: #e0e0e0;
+	position : absolute;
+	right: 0px;
+	top : 50%;
+	margin-top: -6px;
+}
+ul.footerNav li:last-child{
+	color: red;
+}
+ul.footerNav li:last-child a::after{
+	display: none;
+}
+
+/*푸터 텍스트 영역 스타일*/
+div.footerWrap div.footerTextWrap{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 40px 0px;
+	position: relative;
+}
+div.footerTextWrap div.footerTextBox{
+	width: 100%;
+	position: relative;
+}
+/*푸터 로고 영역 스타일*/
+div.footerTextWrap div.footerTextBox h2 a{
+	display: block;
+	width: 60px;
+	height: 57px; 
+	background: url(../img/main/logo_new.png);
+	background-size: cover;
+	position : absolute;
+	text-indent: -99999px;
+	top :10px;
+}
+
+/*푸터 정보 영역 스타일*/
+div.footerTextBox {
+	position: relative;
+}
+div.footerTextBox div.footer_info{
+	width: 100%;
+	padding-left: 120px;
+	font-size: 13px;
+	color : black;
+	line-height: 26px;
+	font-weight: nomal;
+}
+div.footerTextBox div.footer_info ul{
+	margin-left: -32px;
+	margin-top: -16px;
+	width: 100%;
+/*	border: 1px solid red;*/
+}
+div.footerTextBox div.footer_info ul li{
+	float: left;
+	margin-right: 15px;
+}
+div.footerTextBox div.footer_info p.copy{
+	position: absolute;
+	left : 120px;
+	top : 48px;
+}
+
+/*footerTel style*/
+div.footerTextBox div.footerTel{
+	position: absolute;	
+	right: 0px;
+	top : 0px;
+}
+div.footerTextBox div.footerTel p{
+	font-size: 13px;
+	line-height: 13px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+div.footerTextBox div.footerTel p+strong{
+	font-size: 40px;
+	color : black;
+	line-height: 40px;
+	letter-spacing: -.3px;
+}
+div.footer_sns{
+	display: none;
+}
