@@ -283,7 +283,7 @@ div.mainClock div.minutes{
 	height: 31%;
 	width: 4px;
 	position : absolute;
-	top : 105px;
+	top : 100px;
 	left : 271px;
 	box-shadow: 0 0 8px #000000;
 	transform-origin: bottom;
