@@ -121,10 +121,48 @@
 		margin-left : -19px;
 	}
 	div#consultWrap{
-		width: 92px;
-		height: 60px;
-		top : 0px;
+		display: none;
 	}
+	div.consultWrap_m_box{
+		padding-right: 20px;
+	}
+	div.consultWrap_m_box div#consultWrap_m{
+		z-index: 100;
+		display: block !important ;
+		width: 90px;
+		height: 62px;
+		position: absolute;
+		top :	0px; 
+		right: 0px;
+		padding-right: 20px;
+		border : 1px solid red;
+		background-image: url("../img/main/gnb_consult_bg_w130_44.png");
+		background-repeat: no-repeat;
+		animation : consultImg_m 4s steps(45) infinite;
+	}
+	div.consultWrap_m_box div#consultWrap_m:hover{
+		background-image: url("../img/main/gnb_consult_bg_w130_hover_44.png");
+		background-repeat: no-repeat;
+		animation : consultImg_m 4s steps(45) infinite;
+	}
+
+	@keyframes consultImg_m{
+		0% , 100% {background-position: -20px }
+		49%, 51% {background-position: -5870px}
+
+	}
+
+	div#consultWrap_m a{
+		display: block;
+		width: 90px;
+		height: 62px;
+		position: absolute;
+		text-align: center;
+		line-height: 90px;
+		font-size: 15px;
+	}
+
+	
 	a.hambergerBtn span {
 		display: inline-block;
 		width: 40px;

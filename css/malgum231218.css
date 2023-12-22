@@ -112,13 +112,32 @@ ul#gnbR li {
 	 	상담하기 style
 * ***********************/
 div#consultWrap{
+	background: url("../img/main/gnb_consult_bg_w180_44.png") no-repeat;
+	background-position: 50px -25px;
 	width: 150px;
 	height: 90px;
 	position : absolute;
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 	right : 0px;
-	top : 5px;
+	top : 0px;
+
+	animation : consultImg 4s steps(45) infinite;
 }
+
+
+@keyframes consultImg{
+	0% , 100% {background-position: -15px }
+	49%, 51% {background-position: -8115px}
+	
+}
+
+div#consultWrap:hover{
+	background: url("../img/main/gnb_consult_bg_w180_hover_44.png") no-repeat;
+	background-position: -30px -20px;
+
+	animation : consultImg 4s steps(45) infinite;
+}
+
 div#consultWrap a{
 	display: block;
 	width: 150px;
