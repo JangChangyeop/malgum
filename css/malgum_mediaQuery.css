@@ -135,7 +135,7 @@
 		top :	0px; 
 		right: 0px;
 		padding-right: 20px;
-		border : 1px solid red;
+/*		border : 1px solid red;*/
 		background-image: url("../img/main/gnb_consult_bg_w130_44.png");
 		background-repeat: no-repeat;
 		animation : consultImg_m 4s steps(45) infinite;
@@ -160,7 +160,13 @@
 		text-align: center;
 		line-height: 90px;
 		font-size: 15px;
+		text-indent: -99999px;
+		background-image: url(../img/main/btnContact_img.png);
+		background-repeat: no-repeat;
+		background-size: 23px 22px;
+		background-position: 35px 23px;
 	}
+	
 
 	
 	a.hambergerBtn span {
@@ -488,6 +494,9 @@
 	div.mcTextBoxInner p.mcPText{
 		display: none;
 	}
+	div.mcTextBoxInner{
+		margin-bottom: 30px;
+	}
 
 	div.mcTextBoxInner h2{
 		font-size: 20px;
@@ -589,9 +598,10 @@
 	}
 	
 
-	div.footer_sns ul li{
-		position : relative;
-		
+	div.footer_sns ul {
+		position: relative;
+		left : -100px;
+		margin : 0 auto;
 	}
 	
 }
