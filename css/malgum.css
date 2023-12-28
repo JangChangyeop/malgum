@@ -1,6 +1,6 @@
 /*************************
-		 * 	reset style
-		 * ***********************/
+	 * 	reset style
+ * ***********************/
 		 *{
 		 	padding: 0;
 		 	margin: 0;
@@ -8,7 +8,7 @@
 		 	box-sizing: border-box;
 		 }
 		 a {
-		 	color : inherit;
+		 	color : black;
 		 	text-decoration: none;
 		 }
 		 ul#gnbL li a:hover , ul#gnbR li a:hover ,ul.dept2 > li a:hover, ul.dept3 > li a:hover{
@@ -29,7 +29,14 @@
 		 .blank{
 		 	opacity: 0;
 		 }
+		 .nav_on{
+		 	color : #2CC1EA !important;
+		 }
+		 body, html {
+		 	overflow-x: hidden;
+		 }
 
+		
 /*************************
 	 	header style
 * ***********************/
@@ -44,14 +51,75 @@ header#header {
 }
 div.header_top_wrap {
 	width: 1170px;
-width: 100%;
+	width: 100%;
 	height: 100%;
 	margin : 0 auto;
 	position : relative;
 }
-/*************************
-	 	gnb style
-* ***********************/
+/*******************************
+		pc버전 gnb style
+*********************************/
+
+nav#gnb{
+/*	background-color: gray;*/
+	width: 1170px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	top : -17px;
+}
+
+/*gnbL style*/
+ul#gnbL>li.gnbL_li {
+/*	border: 1px solid red;*/
+	position : relative;
+	float: left;
+	width: 13%;
+	height: 100px;
+	text-align: center;
+	line-height: 110px;
+
+}
+ul#gnbL>li.gnbL_li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 17px;
+	font-weight: bold;
+	padding-top: 10px;
+	color : black ;
+	margin-bottom: 26px;
+}	
+ul#gnbL>li.nav_on>a{
+	color : #2CC1EA ;
+}
+
+/*gnbR style*/
+
+ul#gnbR>li.gnbR_li {
+/*	border: 1px solid blue;*/
+	position : relative;
+	float: left;
+	width: 13%;
+	height: 100px;
+	text-align: center;
+	line-height: 125px;
+	left : 250px;
+}
+ul#gnbR>li.gnbR_li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 17px;
+	font-weight: bold;
+	color : black;
+}
+ul#gnbR>li.nav_on>a{
+	color : #2CC1EA ;
+}
+
+
+/*네비게이션 맑음 로고*/
 a#logo {
 	display: block;
 	width: 60px;
@@ -63,51 +131,7 @@ a#logo {
 	left : 50%;
 	top : 20px;
 }
-nav#gnb {
-	width: 1170px;
-	height: 100%;
-	margin : 0 auto;
-	position : relative;
-/*			border : 1px solid red;*/
-}
-/*************************
-	 	gnbL style
-* ***********************/
-ul#gnbL{
-	position : absolute;
-	left : 0px;
-}
 
-ul#gnbL li{
-	float: left;
-}
-
-ul#gnbL li a, ul#gnbR li a{
-	display: block;
-	height: 100px;
-	padding: 0 37px;
-	font-size: 17px;
-	font-weight: bold;
-	color : black;
-}
-
-ul#gnbL li a span, ul#gnbR li a span{
-	display: inline-block;
-	line-height: 40px;
-	margin-top: 45px;
-}
-/*************************
-	 	gnbR style
-* ***********************/
-ul#gnbR{
-	position : relative;
-	right : 140px;
-	top : 0px;
-	float: right;
-}
-ul#gnbR li {
-	float: left;
-}
 /*************************
 	 	상담하기 style
 * ***********************/
@@ -162,80 +186,116 @@ div#consultWrap a::before {
 }
 
 /********************************
-	 	dept2Wrap style
-* *******************************/
-div.dept2Wrap{
-	display: none;
-	position: absolute;
-	left: 50%;
-/*		    margin-left: -420px;*/
-	min-width: 160px;
-	box-sizing: border-box;
-	background-color: #fff;
-	top: 99px;
-	padding: 0px 0px 20px;
-	border: 1px solid #e1e1e1;
-	z-index: 3;
-}
-/********************************
-	 	marginLeft style
-* *******************************/
-.marginLeft_minus400 {
-	margin-left : -400px;
-}
-.marginLeft_minus255{
-	margin-left : -255px;
-}
-.marginLeft_140{
-	margin-left : 140px;
-}
-.marginLeft_295{
-	margin-left : 295px;
-}
-/********************************
 	 	서비스 소개 Dept2 style
 * *******************************/
 div.serviceDept2{
+	display: none;
 	width: 100%;
-/*			border : 1px solid red;*/
-margin : 0 auto;
-position : absolute;
-top : 100px;
-display: none;
-background-color: #fff;
-width: 100%;
+	border : 1px solid lightgray;
+	margin : 0 auto ;
+/*	margin-left: -15px;*/
+	position : absolute;
+	top : 100px;
+	background-color: #fff;
+	width: 100%;
+	padding-left: 32px;
 }
 ul.dept2 {
-	width: 1100px;
+	width: 1170px;
 	margin : 0 auto;
-/*			border : 1px solid blue;*/
+/*	border : 1px solid blue;*/
 }
 ul.dept2 > li {
+	width: 17%;
 	float: left;
 	display: inline-block;
-/*			border : 1px solid blue;*/
-font-size: 17px;
-margin-right: 80px;
-font-weight: bold;
-padding: 30px 0px 40px 0px;
+/*	border : 1px solid blue;*/
+	font-size: 17px;
+	
+	font-weight: bold;
+	padding: 30px 0px 40px 0px;
 }
+
+ul.dept2 > li a {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 35px;
+	color : black;
+	text-align: left !important;
+}
+ul.dept2 > li.nav_on> a{
+	color : #2CC1EA;
+}
+
 ul.dept3 > li {
 	display: flex;
 	justify-content: space-between;
-/*			border : 1px solid black;*/
-font-size: 14px;
-font-weight: normal;
-/*			padding: 17px 0px;*/
+/*	border : 1px solid black;*/
+	font-size: 14px ;
+	font-weight: normal;
+	margin-left : -32px;
 }
 ul.dept3 > li:nth-child(1){
 	margin-top: 15px;
 }
-ul.dept2 > li a, ul.dept3 > li a {
+ul.dept3 > li a {
 	display: block;
 	width: 100%;
-	height: 35px;
+	height: 30px;
 	line-height: 35px;
+	color : black;
+	text-align: left !important;
 }
+
+ 
+
+/**********************
+	각 메뉴별 하위 메뉴 
+***********************/
+div.dept2Wrap  {
+	display: none;
+}
+div.dept2Wrap > ul{
+	border : 0.5px solid lightgray;
+	width: 125%;
+	position : relative;
+	top : -26px;
+	left : -20px;
+	padding: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+
+}
+div.dept2Wrap > ul li {
+/*	border : 1px solid blue;*/
+	position: relative;
+	display: flex;
+
+}
+div.dept2Wrap > ul>li  a{
+/*	border : 1px solid black;*/
+	display: inline-block;
+	width: 100%;
+	height: 30px !important;
+
+	font-size: 14px !important;
+	font-weight: normal !important;
+	padding: 7px 30px !important;
+	margin: 0px !important;
+	line-height: 15px;
+	text-align: left;
+	color : black;
+}
+
+div.dept2Wrap > ul>li:hover  a{
+	color : #2CC1EA !important;
+}
+
+
+
+
 
 
 /*************************
@@ -891,9 +951,11 @@ ul.footerNav li>a::after {
 	top : 50%;
 	margin-top: -6px;
 }
-ul.footerNav li:last-child{
-	color: red;
+
+ul.footerNav li:last-child a {
+	color: red ;
 }
+
 ul.footerNav li:last-child a::after{
 	display: none;
 }

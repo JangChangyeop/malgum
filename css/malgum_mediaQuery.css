@@ -12,11 +12,13 @@
 	div#main div.mainWrap div.mainText{
 	left : 65px;
 	}
+
 }
 
 
 /*화면이 1160px 미만일 때*/
 @media screen and (max-width : 1160px){
+
 
 	section#awards div.awardsWrap {
 		width: 100%;
@@ -102,7 +104,7 @@
 **********************************/
 @media screen and (max-width : 1100px){
 
-	/*mobileGnb style*/
+	
 	div.header_top_wrap{
 		display: none;
 	}
@@ -111,7 +113,11 @@
 		height: 60px;
 	}
 
-	/*Gnb 네비게이션 스타일*/
+	/**********************************
+		mobileGnb 네비게이션 스타일
+	***********************************/
+
+	/*맑음 로고 style*/
 	a#logo {
 		width: 38px;
 		height: 36px;
@@ -120,6 +126,8 @@
 		left : 50%; 
 		margin-left : -19px;
 	}
+
+	/*상담하기 style*/
 	div#consultWrap{
 		display: none;
 	}
@@ -168,28 +176,40 @@
 	}
 	
 
-	
+	/*모바일 네비게이션 햄버거 버튼 스타일 */
 	a.hambergerBtn span {
 		display: inline-block;
 		width: 40px;
 		height: 40px;
 		position : absolute;
 		left : 15px;
-		top : 15px;
+		top : 10px;
 		font-size: 2.5rem;
 /*		border : 1px solid red;*/
 		line-height: 40px;
 	}
+
 	/*gnb_m_wrap style */
 	div#gnb_m_wrap{
 		width: 100%;;
 		position : absolute;
 		top : 60px;
+
 	}
 	/*gnb_m style -> dept1*/
 	ul.gnb_m{
 		width: 100%;
+		height: 100vh;
 		padding: 0;
+		background-color: white;
+		transition: all 1s;
+		transform : translateX(-100%);
+		overflow-y: scroll;
+		padding-bottom: 30px;
+	}
+	ul.gnb_m.go{
+		transition: all 1s;
+		transform : translateX(0px);
 	}
 	ul.gnb_m>li {
 		width: 100%;
@@ -197,7 +217,38 @@
 		font-weight: bold;
 		cursor: pointer;
 		z-index: 1;
-		background-color: beige;
+		
+	}
+	/*bg_blue 클래스 명이 붙을 시 배경 색 변화 스타일 */
+	ul.gnb_m>li.bg_blue1{
+		background-color: #36C1E8;
+	}
+	ul.gnb_m_dept2>li{
+		background-color: #DDF2F9;
+		font-weight: normal;
+		z-index: 9999999;
+	}
+	ul.gnb_m_dept2>li.bg_blue2{
+		background-color: #36C1E8 ;
+	}
+	ul.gnb_m>li.bg_blue1 ul.gnb_m_dept2{
+		display: block !important;
+	}
+	ul.gnb_m_dept2>li.bg_blue2 ul.gnb_m_dept3{
+		display: block !important;
+	}
+	ul.gnb_m_dept3{
+		background-color: #F0EFEF;
+	}
+
+	/*on 클래스를 가진 li의 span 태그 기울기 180도*/
+	ul.gnb_m>li.bg_blue1>span.material-symbols-outlined{
+		transform: rotate(180deg);		
+		color : white;
+	}
+	ul.gnb_m_dept2>li.bg_blue2>span.material-symbols-outlined{
+		transform: rotate(180deg);		
+		color : white;
 	}
 	ul.gnb_m>li>a, .gnb_m_dept2>li>a, .gnb_m_dept3>li>a {
 		display: inline-block;
@@ -220,7 +271,9 @@
 		font-weight: normal;
 		line-height: 60px;
 		cursor: pointer;
+		transform: rotate(0deg);
 	}
+	
 	span.closeBtn{
 		display : none;
 	}
@@ -235,9 +288,6 @@
 		line-height: 20px;
 		z-index: 9999;
 
-	}
-	.gnb_m_dept2>li:hover{
-		background-color: lightblue;
 	}
 	.gnb_m_dept2>li>a {
 		padding-left: 30px;
@@ -296,12 +346,12 @@
 		left : 205px;
 	}
 	div.mainClock div.hour{
-		top : 98px;
-		left : 210px;
+		top : 105px;
+		left : 212px;
 	}
 	div.mainClock div.minutes{
 		top : 80px;
-		left : 210px;
+		left : 218px;
 	}
 	div.mainClock div.seconds{
 		top : 60px;
