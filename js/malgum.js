@@ -1,111 +1,7 @@
+
+
 $(function(){
-            let gnbRLi = $("nav#gnb ul#gnbR li");
-            let gnbLLi = $("nav#gnb ul#gnbL li");
-            let dept2Wrap = $("div.dept2Wrap");
-            let serviceDept = $("div.serviceDept2");
-            let dept3Li = $("ul.dept3 > li");
-
-            gnbRLi.on("mouseover", function(){
-                let tg = $(this);
-                let i = tg.index();
-                
-                dept2Wrap.eq(i+2).show();
-                gnbRLi.eq(i).addclass("hover");
-                
-            })
-            dept2Wrap.mouseover(function(){
-                let tg = $(this);
-                tg.show();
-            })
-
-            gnbRLi.on("mouseleave", function(){
-                let tg = $(this);
-                let i = tg.index();
-
-                dept2Wrap.eq(i+2).hide();
-            })
-            dept2Wrap.mouseleave(function(){
-                let tg = $(this);
-                tg.hide();
-            })
-            gnbLLi.on("mouseover", function(){
-                let tg = $(this);
-                let i = tg.index();
-
-                if(i!=0) dept2Wrap.eq(i-1).show();
-
-                if(i == 0) {serviceDept.show(); }
-            })
-            serviceDept.mouseover(function(){
-                serviceDept.show();
-            })
-
-            gnbLLi.on("mouseleave", function(){
-                let tg = $(this);
-                let i = tg.index();
-
-                if(i != 0) dept2Wrap.eq(i-1).hide();    
-                if(i == 0) serviceDept.hide();
-            })
-            serviceDept.mouseleave(function(){
-                serviceDept.hide();
-            })
-
-            dept3Li.mouseover(function(){
-                dept3Li.parent($("li")).css({"color" : "#2CC1EA"});
-            })
-        
-
-
-            /*모바일 화면  nav fucntion*/
-            let burgerBtn = $("a.hambergerBtn span.burgerBtn");
-            let closeBtn = $("a.hambergerBtn span.closeBtn")
-            let gnb_m = $("div#gnb_m_wrap> ul.gnb_m");
-            let gnb_m_li = $("ul.gnb_m>li");
-            let gnb_m_dept2 = $("ul.gnb_m_dept2");
-            let gnb_m_dept2_li = $("ul.gnb_m_dept2>li");
-            let gnb_m_dept3 = $("ul.gnb_m_dept3");
-
-            closeBtn.hide();
-            gnb_m.hide();
-            gnb_m_dept2.hide();
-            gnb_m_dept3.hide();
-             //햄버거 버튼 클릭 시 nav 보이게하기
-            burgerBtn.click(function(){
-                gnb_m.addClass("on");
-                gnb_m.show();
-                burgerBtn.hide();
-                closeBtn.show();
-            })
-            closeBtn.click(function(){
-                gnb_m.removeClass("on");
-                gnb_m.hide();
-                burgerBtn.show();
-                closeBtn.hide();
-            })
-
-            // 모바일 네비게이션 클릭 시 index() 따와서 dept2 open
-            gnb_m_li.click(function(){
-                let target = $(this);
-                let numLi = target.index();
-                gnb_m_dept2.removeClass('on');
-
-                gnb_m_dept2.eq(numLi).addClass('on');
-            })
-
-            // 모바일 네비게이션 클릭 시 index() 따와서 dept3 open
-            
-            gnb_m_dept2_li.click(function(){
-                let target1 = $(this);
-                let dept3Li = target1.index();
-                // alert(detp3Li);
-                // gnb_m_dept3.removeClass('dept3on');
-                gnb_m_dept3.hide();
-                gnb_m_dept3.eq(dept3Li).show();
-                
-            })
-
-        setInterval( () => {
+    setInterval( () => {
 
           const date = new Date();
           
@@ -122,6 +18,149 @@ $(function(){
           second.style.transform = `rotateZ(${s}deg)`;
 
         });
+
+    $("html").mouseleave(function(){
+     serviceDept2.hide();
+     dept2Wrap.hide();
+    })
+            /*pc 화면 gnb function*/
+            var gnbL_li = $("li.gnbL_li");
+            var gnbR_li = $("li.gnbR_li");
+            var serviceDept2 = $("div.serviceDept2");
+            var dept2Wrap = $("div.dept2Wrap")
+            var dept2_li = $("ul.dept2 > li");
+            var dept3_li = $("ul.dept3 > li");
+
+            /*서비스 소개 호버시 메소드*/
+            serviceDept2.mouseover(function(){
+                gnbL_li.eq(0).addClass('nav_on');
+            })
+            serviceDept2.mouseleave(function(){
+                serviceDept2.hide();
+                gnbL_li.removeClass('nav_on');
+                dept2_li.removeClass('nav_on');
+            })
+            dept2_li.mouseover(function(){
+                var tg = $(this);
+                var i = tg.index();
+                dept2_li.removeClass('nav_on');
+                dept2_li.eq(i).addClass('nav_on');
+            })
+            
+
+            /*gnbL_li jquery*/
+            gnbL_li.mouseover(function(){
+                var tg = $(this);
+                var i = tg.index();
+
+                gnbL_li.eq(i).addClass('nav_on');
+                if(i == 0){
+                    serviceDept2.show();
+                    $("div.dw_1").hide();
+                    $("div.dw_2").hide();
+                      
+                }
+                if(i == 1){
+                    $("div.dw_1").show();
+                    serviceDept2.hide();
+                }
+                if(i == 2){
+                    $("div.dw_2").show();
+                    serviceDept2.hide();
+                }
+            })
+            gnbL_li.mouseleave(function(){
+                $("div.dw_1").hide();
+                $("div.dw_2").hide();
+                gnbL_li.removeClass('nav_on');
+            })
+
+
+            gnbR_li.mouseover(function(){
+                var tg = $(this);
+                var i = tg.index();
+                gnbR_li.eq(i).addClass('nav_on');
+                if(i == 0){
+                    $("div.dw_3").show();
+                }
+                if(i == 1){
+                    $("div.dw_4").show();
+                }
+            })
+            gnbR_li.mouseleave(function(){
+                $("div.dw_3").hide();
+                $("div.dw_4").hide();
+                gnbR_li.removeClass('nav_on');
+            })
+
+            /****************************
+               모바일 화면  nav fucntion
+            *****************************/
+            let burgerBtn = $("a.hambergerBtn span.burgerBtn");
+            let closeBtn = $("a.hambergerBtn span.closeBtn")
+            let gnb_m = $("div#gnb_m_wrap> ul.gnb_m");
+            let gnb_m_li = $("ul.gnb_m>li");
+            let gnb_m_dept2 = $("ul.gnb_m_dept2");
+            let gnb_m_dept2_li = $("ul.gnb_m_dept2>li");
+            let gnb_m_dept2_li_bg_blue2 = $("ul.gnb_m_dept2>li.bg_blue2");
+            let gnb_m_dept2_li_a = $("ul.gnb_m_dept2>li>a");
+            let gnb_m_dept3 = $("ul.gnb_m_dept3");
+
+            closeBtn.hide();
+            // gnb_m.hide();
+           gnb_m_dept2.hide();
+           gnb_m_dept3.hide();
+             //햄버거 버튼 클릭 시 nav 보이게하기
+            burgerBtn.click(function(){
+                gnb_m.addClass("on");
+                gnb_m.addClass('go');
+                burgerBtn.hide();
+                closeBtn.fadeIn();
+            })
+            closeBtn.click(function(){
+                gnb_m.removeClass("on");
+                gnb_m.removeClass("go");
+                burgerBtn.fadeIn();
+                closeBtn.fadeOut();
+            })
+
+            // 모바일 네비게이션 클릭 시 index() 따와서 dept2 open
+            gnb_m_li.click(function(){
+                let target = $(this);
+                let numLi = target.index();
+
+               
+                //클릭한 li 배경색 파랑으로 
+                if(gnb_m_li.eq(numLi).hasClass('bg_blue1') ){
+                    gnb_m_li.eq(numLi).removeClass('bg_blue1');    
+                } else {
+                    gnb_m_li.removeClass('bg_blue1');
+                    gnb_m_li.eq(numLi).addClass('bg_blue1');
+                }
+                
+
+                
+            })
+
+            //모바일 네비게이션 클릭 시 index() 따와서 dept3 open
+            gnb_m_dept2_li.click(function(){
+                let tg = $(this);
+                let i = tg.index();
+
+                if( gnb_m_dept2_li.eq(i).hasClass('bg_blue2') ){
+                     gnb_m_dept2_li.removeClass('bg_blue2');
+                } else {
+                    gnb_m_dept2_li.removeClass('bg_blue2');
+                    gnb_m_dept2_li.eq(i).addClass('bg_blue2');    
+                }
+
+                
+
+                
+            });
+
+           
+
         
 
         /*브라우저 스크롤 시 발생되는 애니메이션 추가 */
@@ -220,14 +259,9 @@ $(function(){
 
 
 
+})     
 
-
-
-
-
-
-})          
-
+/*브라우저 스크롤 시 발생되는 애니메이션 추가 */
 $(window).scroll(function(){
             var awardsTitle = $("section#awards div.awardTitle");
             var mcTab_list = $('div.mcWrap div.mcTabBox ul.mcTab li');
@@ -272,6 +306,7 @@ $(window).scroll(function(){
             }
             if(awardsTitle_2 < scrollBottom){
                 $("section#awards div.awardTitle").eq(1).addClass('move_leftRigth');
+                $("section#awards div.awardTitle").eq(2).addClass('move_leftRigth');
             }
             if(awardsTitle_3 < scrollBottom){
                 $("section#awards div.awardTitle").eq(3).addClass('move_leftRigth');
