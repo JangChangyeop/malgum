@@ -1,0 +1,533 @@
+/*****************************
+	web_agency_content style
+*******************************/
+section#web_agency_content {
+	width: 100%;
+	position: relative;
+	top : 100px;
+/*	border : 1px solid red;*/
+}
+
+div.web_agencyWrap{
+	width: 1170px;
+	margin: 0 auto;
+/*	border : 1px solid blue;*/
+}
+div.wa_header{
+	margin-bottom: 50px;
+}
+/*컨텐츠 헤더 텍스트 스타일*/
+div.headerTxt {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	padding-top: 80px;
+}
+div.headerTxt h1 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/*로컬 네비바 스타일*/
+ul.wa_lnb {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position : relative;
+}
+ul.wa_lnb>li {
+	width: 19.5%;
+	height: 60px;
+	
+	text-align: center;
+	border : 1px solid #979797;
+}
+ul.wa_lnb>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 55px;
+	font-size: 16px;
+	font-weight: bold;
+	color : #979797;
+}
+
+/****************************
+웹 에이전시 메인 컨텐츠 스타일 
+******************************/
+div.wa_mainWrap{
+	width: 1170px;
+	position : relative;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+div.wa_main{
+	display: flex;
+	flex-direction: row;
+}
+div.wa_mainTxtBox{
+	position : relative;
+	width: 50%;
+	padding-left: 50px;
+}
+/*검은 박스 안 텍스트*/
+div.wa_mainTxt01{
+	width: 180px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	color : white;
+	background-color: #0A0707;
+
+	margin-bottom: 30px;
+}
+
+/*메인 두번째 텍스트 스타일 .wa_mainTxt02 */
+div.wa_mainTxt02{
+	margin-bottom: 50px;
+}
+div.wa_mainTxt02>p {
+	font-size: 37px;
+	margin-bottom: 0px;
+}
+div.wa_mainTxt02>h2{
+	font-size: 37px;
+	font-weight: bold;
+}
+div.wa_mainTxt02>h2>span {
+	color : #2CC1EA;
+}
+div.wa_mainTxt02>h2::before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position :absolute;
+	left : 28px;
+	top : 110px;
+}
+
+/*메인 세번째 텍스트 스타일 .wa_mainTxt03 */
+div.wa_mainTxt03{
+	
+}
+div.wa_mainTxt03>p{
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+div.wa_mainTxt03>p:first-child::before{
+	content : "";
+	width: 35px;
+	border-top : 1px solid black;
+	display: block;
+	margin-bottom: 30px;
+}
+
+/*웹 에이전시 메인 이미지 박스 스타일 wa_mainImgBox*/
+div.wa_mainImgBox{
+	width: 50%;
+	height: 442px;
+	background-image: url('../img/what_we_do/w-intro_img.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+/************************
+	웹 에이전시 진행과정 스타일 영역 
+	wa_processWarp style
+*************************/
+div.wa_processWarp {
+	width: 100%; 
+	background-color: #e0e3e7;
+	margin : 0 auto; 
+	padding: 80px 0px;
+}
+div.wa_process{
+	width: 1170px;
+	margin : 0 auto;
+}
+
+/*list 스타일*/
+ul.wa_process_ul{
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position : relative;
+
+}
+ul.wa_process_ul p {
+	font-size: 13px;
+	margin-top: 5px;
+}
+ul.wa_process_ul>li{
+	width: 16.666%;
+	padding: 22px ;
+}
+
+div.wa_p_list{
+	width: 100%;
+	position : relative;
+	background-color: white;
+	box-shadow: 0 0 10px #c1c1c1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 20px;
+}
+
+ul.wa_process_ul>li:nth-child(1)::after,
+ul.wa_process_ul>li:nth-child(2)::after,
+ul.wa_process_ul>li:nth-child(3)::after,
+ul.wa_process_ul>li:nth-child(4)::after,
+ul.wa_process_ul>li:nth-child(5)::after{
+	z-index: 99;
+	content: '';
+	display: block;
+	width: 76px;
+	height: 11px;
+	background-image: url(../img/what_we_do/step_arrow.png);
+	position: relative;
+	left: 135px;
+	bottom : 50%;
+	margin-top: -5.5px;
+}
+
+div.wa_p_list_2{
+	transform: rotateZ(-15deg);
+}
+
+div.back_img_blue{
+	background-color: #2d89e8;
+	width: 13%;
+	height: 150px;
+	position: absolute;
+}
+/* 리스트 안 이미지 스타일*/
+div.wa_pl_img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+/************************
+	웹 에이전시 반응형 홈페이지 스타일 영역 
+	wa_content2Wrap style
+*************************/
+div.wa_content2Wrap{
+	width: 100%;
+	position: relative;
+	padding: 100px 0px;
+}
+div.wa_content2Box{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*2번째 컨텐츠 텍스트 박스 스타일*/
+div.wa_cont2_textBox{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+div.wa_cont2_textBox>h3>strong{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+}
+div.wa_cont2_textBox>h3>strong::after {
+	content : '';
+	display: block;
+	width: 203px;
+	height: 25px;
+	background-color: #9E8BF3;
+	position: absolute;
+	top : 15px;
+	opacity: 0.3;
+}
+div.wa_cont2_textBox>p::before{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: black;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+/*2번째 컨텐츠 이미지 박스 스타일*/
+div.wa_cont2_imgBox{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+}
+div.wa_cont2_img>p {
+	margin-top : 13px;
+	font-size: 14px;
+}
+
+/************************
+	웹 에이전시 3번째 컨텐츠 스타일 영역 
+	wa_content3Wrap style
+*************************/
+div.wa_content3Wrap{
+	width: 100%;
+	background-color: #F1F1F1;
+	padding: 100px 0px 75px 0px;
+}
+div.wa_content3Box{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+div.wa_cont3_process{
+	display: flex;
+	flex-direction: row;
+}
+div.wa_cont3_imgBox{
+	padding-right: 20px;
+}
+div.wa_cont3_imgBox div.plusImg{
+	width: 38px;
+	height: 38px;
+	background-image: url(../img/what_we_do/process_plus.png);
+	position : relative;
+	left : 147px;
+	top : -100px;
+}
+div.wa_cont3_result div.equalImg{
+	width: 38px;
+	height: 38px;
+	background-image: url(../img/what_we_do/process_e.png);
+	position : relative;
+	left : -80px;
+	top : -100px;
+}
+
+/************************
+	웹 에이전시 4번째 컨텐츠 스타일 영역 
+	wa_content4Wrap style
+*************************/
+div.wa_content4Wrap{
+	width: 100%;
+	background-color: #D5D5D5;
+	padding: 50px 0px 40px 0px;
+}
+div.wa_content4Box{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+div.wa_content4Box h3{
+	font-size: 25px;
+}
+div.wa_content4Box>h3>strong{
+	display: inline-block;
+	position: relative;
+}
+div.wa_content4Box>h3>strong::after {
+	content : '';
+	display: block;
+	width: 151px;
+	height: 25px;
+	background-color: #9E8BF3;
+	position: absolute;
+	left : -3px;
+	top : 15px;
+	opacity: 0.3;
+}
+div.online_consult{
+	border: 1px solid black;
+	padding: 15px 40px;
+	font-size: 19px;
+}
+
+/************************
+	웹 에이전시 5번째 컨텐츠 스타일 영역 
+	wa_content5Wrap style
+*************************/
+div.wa_content5Wrap{
+	width: 100%;
+	background-color: #F1F1F1;
+	padding: 100px 0px;
+}
+div.wa_content5Box {
+	width: 1170px;
+	margin : 0 auto;
+}
+
+div.wa_cont5_txt{
+	padding-bottom: 20px;
+}
+div.wa_cont5_txt>h3 {
+	font-weight: bold;
+	color: #3955FF;
+	font-size: 32px;
+}
+
+/*wa_cont5_content style*/
+div.wa_cont5_content{
+	width: 100%;
+	position: relative;
+}
+div.wa_cont5_content ul{
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+div.wa_cont5_content ul li {
+	width: 23.33%;
+	margin-bottom: 35px;
+	position: relative;
+	background-color: white;
+	max-height: 350px;
+	overflow: hidden;
+}
+/*헤드 이미지 스타일*/
+div.wa_cont5_list_headImg>img {
+	width: 100%;
+	background-size: contain;
+}
+
+/*텍스트 스타일*/
+div.wa_cont5_list_txt{
+	padding: 20px 15px;
+}
+/*바텀 이미지 스타일*/
+div.wa_cont5_list_bottomImg{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+/*더보기 스타일*/
+div.wa_cont5_plusContent{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+div.plusCont_txt{
+	background-color: #E61F4A;
+	padding: 15px 25px;
+	color: white;
+	font-weight: bold;
+}
+div.plusCont_txt>span {
+	margin-right: 30px;
+}
+
+/************************
+	웹 에이전시 6번째 컨텐츠 스타일 영역 
+	wa_content6Wrap style
+*************************/
+div.wa_content6Wrap{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: white;
+}
+div.wa_content6Box {
+	width: 1170px;
+	margin : 0 auto;
+}
+div.wa_cont6_txt{
+	padding-bottom: 40px;
+}
+div.wa_cont6_txt>h3 {
+	font-weight: bold;
+	color: #3955FF;
+	font-size: 32px;
+}
+/*wa_cont6_content style*/
+div.wa_cont6_content{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+div.wa_cont6_list {
+	width: 18%;
+	margin-bottom: 35px;
+	position: relative;
+	background-color: white;
+	max-height: 350px;
+	overflow: hidden;
+	border: 1px solid lightgray;
+}
+/*헤드 이미지 스타일*/
+div.wa_cont6_list_headImg>img {
+	width: 100%;
+	background-size: contain;
+}
+
+/*텍스트 스타일*/
+div.wa_cont6_list_txt{
+	padding: 20px 15px;
+	border-top : 1px solid lightgray;
+}
+
+/************************
+	웹 에이전시 7번째 컨텐츠 스타일 영역 
+	wa_content7Wrap style
+*************************/
+div.wa_content7Wrap{
+	width: 100%;
+	background-color: white;
+}
+div.wa_content7Box {
+	width: 1170px;
+	margin : 0 auto;
+}
+div.wa_cont7_txt>h3 {
+	font-weight: bold;
+	color: #3955FF;
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+/*wa_cont7_content style*/
+div.wa_cont7_content{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+div.wa_cont7_list {
+	width: 23%;
+	height: 400px;
+	padding: 30px 20px;
+	position: relative;
+	background-color: white;
+	max-height: 350px;
+	overflow: hidden;
+	border: 1px solid lightgray;
+}
+div.wa_cont7_list img{
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+}
