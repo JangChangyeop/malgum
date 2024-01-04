@@ -21,6 +21,10 @@
 	/****************************
 	웹 에이전시 메인 컨텐츠 스타일 
 	******************************/
+	div.headerTxt{
+		padding-top: 40px;
+		height: 150px;
+	}
 	div.wa_mainWrap{
 		width: 100%;
 	}
@@ -456,7 +460,7 @@
 		height: 38px;
 		background-image: url(../img/what_we_do/process_plus.png);
 		position : absolute;
-		right : -27px;
+		right : -29.5px;
 		top : 50%;
 		margin-top : -19px;
 		z-index: 99;
@@ -521,5 +525,9 @@
 	화면이 width 770 미만일 때 
 **********************************/
 @media screen and (max-width : 770px){
+	div.headerTxt{
+		padding-top: 0px;
+		height: 80px;
+	}
 
 }
