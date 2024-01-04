@@ -128,7 +128,7 @@ a#logo {
 	text-decoration: none;
 	background: url(../img/main/logo_new.png) no-repeat;
 	position : absolute;
-	left : 50%;
+	left : 47.5%;
 	top : 20px;
 }
 
@@ -903,8 +903,7 @@ footer#footer {
 	width: 100%;
 	position : relative;
 	border-top : 1px solid #dedede;
-	padding-bottom: 50px;
-	bottom : 0px;
+	padding-bottom: 30px;
 }
 footer#footer div.footerWrap{
 	margin: 0 auto;

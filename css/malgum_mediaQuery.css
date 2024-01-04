@@ -194,7 +194,7 @@
 		width: 100%;;
 		position : absolute;
 		top : 60px;
-
+		height: 0;
 	}
 	/*gnb_m style -> dept1*/
 	ul.gnb_m{
@@ -207,9 +207,13 @@
 		overflow-y: scroll;
 		padding-bottom: 30px;
 	}
+	ul.gnb_m.on {
+		display: block;
+	}
 	ul.gnb_m.go{
 		transition: all 1s;
 		transform : translateX(0px);
+		z-index: 9999;
 	}
 	ul.gnb_m>li {
 		width: 100%;
@@ -226,7 +230,7 @@
 	ul.gnb_m_dept2>li{
 		background-color: #DDF2F9;
 		font-weight: normal;
-		z-index: 9999999;
+		z-index: 99;
 	}
 	ul.gnb_m_dept2>li.bg_blue2{
 		background-color: #36C1E8 ;
@@ -286,7 +290,7 @@
 	.gnb_m_dept2>li {
 		padding: 0px;
 		line-height: 20px;
-		z-index: 9999;
+		z-index: 99;
 
 	}
 	.gnb_m_dept2>li>a {

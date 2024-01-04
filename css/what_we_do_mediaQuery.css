@@ -1,0 +1,525 @@
+/*********************************
+	화면이 width 1100 미만일 때 
+**********************************/
+@media screen and (max-width : 1100px){
+
+	/*****************************
+		web_agency_content style
+		웹 에이전시 사업부 소개 컨텐츠 
+	*******************************/	
+	div.web_agencyWrap{
+		width: 100%;
+		margin : 0 auto;
+
+	}
+	/*웹 에이전시 로컬 네브바 */
+	ul.wa_lnb {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	/****************************
+	웹 에이전시 메인 컨텐츠 스타일 
+	******************************/
+	div.wa_mainWrap{
+		width: 100%;
+	}
+	/*메인 두번째 텍스트 스타일 .wa_mainTxt02 */
+	div.wa_mainTxt02>p{
+		font-size: 35px;
+	}
+	div.wa_mainTxt02>h2{
+		font-size: 35px;
+	}
+	div.wa_mainTxt03>p{
+		font-weight: normal;
+	}
+
+	/*웹 에이전시 메인 이미지 박스 스타일 wa_mainImgBox*/
+	div.wa_mainImgBox{
+		width: 55%;
+		background-size: 100%;
+		right : 20px;
+	}
+
+
+	/************************
+	웹 에이전시 진행과정 스타일 영역 
+		wa_processWarp style
+	*************************/
+	div.wa_process{
+		width: 100%;
+	}	
+
+	/*list 스타일*/
+	ul.wa_process_ul {
+		width: 100%;
+		flex-wrap: wrap
+	}
+	ul.wa_process_ul>li{
+	width: 33.333% ;
+	padding: 22px ;
+	}
+	div.wa_p_list{
+		padding : 100px 0px;
+	}
+
+	/*화면이 1100px 보다 작을 때 우선순위 설정*/
+	ul.wa_process_ul>li:nth-child(4){
+		order : 6;
+	}
+	ul.wa_process_ul>li:nth-child(5) {
+		order : 5;
+	}
+	ul.wa_process_ul>li:nth-child(6) {
+		order : 4;
+	}
+	
+	/*화면이 1100px 보다 작을 때 진행방향 화살표 style*/
+	ul.wa_process_ul>li:nth-child(1)::after,
+	ul.wa_process_ul>li:nth-child(2)::after{
+		left : 95%;
+	}
+	ul.wa_process_ul>li:nth-child(3)::after{
+		transform: rotateZ(90deg);
+		left : 110px ;
+		bottom : -25px;
+	}
+	ul.wa_process_ul>li:nth-child(4)::after,
+	ul.wa_process_ul>li:nth-child(5)::after {
+		transform: rotateZ(180deg);
+		left : -60px;
+	}
+	/*뒤 파란 박스*/
+	div.back_img_blue{
+		width: 30%;
+		height: 310px;
+	}
+
+	/*진행과정 텍스트 영역 스타일*/
+	div.wa_p_txtBox{
+		padding: 0 15px;
+	}
+
+
+	/************************
+	웹 에이전시 반응형 홈페이지 스타일 영역 
+	wa_content2Wrap style
+	*************************/
+	div.wa_content2Box{
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	/*이미지 박스 스타일*/
+	div.wa_cont2_img{
+		width: 31%;
+		overflow: hidden;
+	}
+	div.wa_cont2_img>img{
+		display: block;
+		width: 100%;
+
+	}
+
+
+	/************************
+	웹 에이전시 3번째 컨텐츠 스타일 영역 
+	wa_content3Wrap style
+	*************************/
+	div.wa_content3Wrap{
+		padding: 50px 0px;
+	}
+	div.wa_content3Box{
+		width: 100%;
+		padding: 0px 15px;
+	}
+
+	/*3번째 컨텐츠 이미지 영역*/
+	div.wa_cont3_process{
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	div.wa_cont3_imgBox{
+		width: 32%;
+		margin: 8px 5px ;
+		padding: 0;
+		position: relative;
+	}
+	div.wa_cont3_imgBox>img{
+		display: block;
+		width: 100%;
+	}
+
+	/*plus img  플러스 이미지 */
+	div.wa_cont3_imgBox:nth-child(1)::after,
+	div.wa_cont3_imgBox:nth-child(2)::after {
+		content : '';
+		display: block;
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/what_we_do/process_plus.png);
+		position : absolute;
+		left : 50%; 
+		margin-left : -19px;
+		bottom : -27px;
+		z-index: 99;
+	}
+	div.wa_cont3_imgBox:nth-child(1)::before,
+	div.wa_cont3_imgBox:nth-child(2)::before,
+	div.wa_cont3_imgBox:nth-child(4)::before{
+		content : '';
+		display: block;
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/what_we_do/process_plus.png);
+		position : absolute;
+		right : -27px;
+		top : 50%;
+		margin-top : -19px;
+		z-index: 99;
+	}
+	div.wa_cont3_imgBox:nth-child(5)::before{
+		content : '';
+		display: block;
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/what_we_do/process_e.png);
+		position : absolute;
+		right : -27px;
+		top : 50%;
+		margin-top : -19px;
+		z-index: 99;
+	}
+
+	/*display*/
+	div.wa_cont3_result{
+		display: none;
+	}
+	div.wa_cont3_imgBox:nth-child(6){
+		display: block;
+	}
+	div.wa_cont3_imgBox div.plusImg{
+		display: none;
+	}
+	div.wa_cont3_result div.equalImg{
+		display: none;
+	}
+
+	/************************
+	웹 에이전시 4번째 컨텐츠 스타일 영역 
+	wa_content4Wrap style
+	*************************/
+	div.wa_content4Box{
+		width: 100%;
+		padding: 0 15px;
+		flex-direction: column;
+	}
+	div.wa_content4Box h3{
+		font-size: 19px;
+		text-align: center;
+	}
+	div.wa_content4Box>h3>strong::after{
+		top : 10px;
+	}
+	div.online_consult{
+		padding: 10px 30px;
+		font-size: 15px;
+		margin-top: 30px;
+	}
+
+	/************************
+	웹 에이전시 5번째 컨텐츠 스타일 영역 
+	wa_content5Wrap style
+	*************************/
+	div.wa_content5Box{
+		width: 100%;
+		padding: 0 15px;
+	}
+	div.wa_cont5_content ul li{
+		width: 32%;
+	}
+	div.wa_cont5_content ul li:nth-child(9){
+		display: block;
+		visibility: hidden;
+	}
+
+	/************************
+	웹 에이전시 6번째 컨텐츠 스타일 영역 
+	wa_content6Wrap style
+	*************************/
+	div.wa_content6Wrap{
+		padding-top: 60px;
+		padding-bottom: 0px;
+	}
+	div.wa_content6Box{
+		width: 100%;
+		padding: 0px 15px;
+	}
+	div.wa_cont6_txt{
+		padding-bottom: 20px;
+	}
+	div.wa_cont6_list{
+		width: 23%;
+	}
+
+
+	/************************
+	웹 에이전시 7번째 컨텐츠 스타일 영역 
+	wa_content7Wrap style
+	*************************/
+	div.wa_content7Wrap{
+		margin-bottom: 40px;
+	}
+	div.wa_content7Box{
+		width: 100%;
+		padding: 0 15px;
+	}
+	div.wa_cont7_list{
+		width: 32%;
+		margin-bottom: 20px;
+	}
+
+	footer#footer {
+		margin-top: 0px;
+	}
+}	
+
+/*********************************
+	화면이 width 770 미만일 때 
+**********************************/
+@media screen and (max-width : 770px){
+	ul.wa_lnb>li>a{
+		font-size: 11px;
+		font-weight: normal;
+	}
+	div.wa_mainTxtBox{
+		width: 100%;
+		padding: 0px 30px;
+	}
+
+	div.wa_mainTxt02{
+		margin-bottom: 30px;
+	}
+	/*맑음 텍스트 옆 빨간 점 */
+	div.wa_mainTxt02>h2::before{
+		width: 15px;
+		height: 15px;
+		left : 15px;
+	}
+	div.wa_mainTxt03>p:nth-child(3)::before{
+		content : "";
+		width: 35px;
+		border-top : 1px solid black;
+		display: block;
+		margin-bottom: 30px;
+	}
+	p.p_viewMax_770{
+		display: block;
+		font-size: 16px !important	;
+	}
+	p.p_viewMin_770{
+		display: none;
+	}
+
+/*웹 에이전시 메인 이미지 박스 스타일 wa_mainImgBox*/
+	div.wa_mainImgBox{
+		display: none;
+	}
+
+	/************************
+	웹 에이전시 진행과정 스타일 영역 
+	wa_processWarp style
+	*************************/
+	div.wa_processWarp{
+		padding: 30px 0px;
+	}
+	ul.wa_process_ul>li{
+		width: 50% ;	
+		padding: 10px ;
+	}
+	/*화면이 770px 보다 작을 때 우선순위 설정*/
+	ul.wa_process_ul>li:nth-child(1){
+		z-index: 3;
+		order : 1;
+	}
+	ul.wa_process_ul>li:nth-child(2){
+		order : 2;
+		z-index: 2;
+	}
+	ul.wa_process_ul>li:nth-child(3){
+		order : 4;
+		z-index: 1;
+	}
+	ul.wa_process_ul>li:nth-child(4){
+		order : 3;
+	}
+	ul.wa_process_ul>li:nth-child(5) {
+		order : 5;
+	}
+	ul.wa_process_ul>li:nth-child(6) {
+		order : 6;
+	}
+
+	/*화면이 770px 보다 작을 때 진행방향 화살표 style*/
+	ul.wa_process_ul>li:nth-child(1)::after	{
+		width: 50px;
+		height: 11px;
+		background-position-x: -28px;
+		background-repeat: no-repeat;
+	}
+	ul.wa_process_ul>li:nth-child(2)::after,
+	ul.wa_process_ul>li:nth-child(4)::after{
+		width: 50px;
+		height: 11px;
+		background-position-x: -28px;
+		background-repeat: no-repeat;
+		transform: rotateZ(90deg);
+		left : 50%;
+		margin-left: -25px;
+		bottom : -15px;
+	}
+	ul.wa_process_ul>li:nth-child(3)::after{
+		width: 50px;
+		height: 11px;
+		background-position-x: -28px;
+		background-repeat: no-repeat;
+		transform: rotateZ(180deg);
+		left : -35px;
+		bottom : 50%;
+	}
+	ul.wa_process_ul>li:nth-child(5)::after{
+		width: 50px;
+		height: 11px;
+		background-position-x: -28px;
+		background-repeat: no-repeat;
+		transform: rotateZ(0deg);
+		left : 95.5%;
+	}
+
+	div.back_img_blue{
+		width: 47%;
+		height: 310px;
+	}
+
+	/************************
+	웹 에이전시 반응형 홈페이지 스타일 영역 
+	wa_content2Wrap style
+	*************************/
+	div.wa_content2Wrap{
+		padding: 50px 0px 40px 0px;
+	}
+	div.wa_content2Box{
+		flex-direction: column;
+		width: 100%;
+	}
+	div.wa_cont2_textBox{
+		width: 100%;
+	}
+	div.wa_cont2_textBox>p{
+		font-size: 15px !important;
+	}
+	div.wa_cont2_textBox>p::before{
+		margin-top: 20px;
+	}
+
+	/*텍스트 display*/
+	h3.h3_viewMax_770{
+		display: block;
+	}
+	h3.h3_viewMin_770{
+		display: none;
+	}
+
+	/*2번째 컨텐츠 이미지 박스 스타일*/
+	div.wa_cont2_imgBox{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	/************************
+	웹 에이전시 3번째 컨텐츠 스타일 영역 
+	wa_content3Wrap style
+	*************************/
+	div.wa_cont3_imgBox{
+		width: 47.5%;
+		padding: 0px;
+	}
+	div.wa_cont3_imgBox:nth-child(2)::before {
+		display: none;
+	}
+	div.wa_cont3_imgBox:nth-child(3)::before{
+		content : '';
+		display: block;
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/what_we_do/process_plus.png);
+		position : absolute;
+		right : -27px;
+		top : 50%;
+		margin-top : -19px;
+		z-index: 99;
+	}
+	div.wa_cont3_imgBox:nth-child(3)::after {
+		content : '';
+		display: block;
+		width: 38px;
+		height: 38px;
+		background-image: url(../img/what_we_do/process_plus.png);
+		position : absolute;
+		left : 50%; 
+		margin-left : -19px;
+		bottom : -27px;
+		z-index: 99;
+	}
+	div.wa_cont3_imgBox:nth-child(4)::before{
+		display: none;
+	}
+
+	/************************
+	웹 에이전시 5번째 컨텐츠 스타일 영역 
+	wa_content5Wrap style
+	*************************/
+	div.wa_cont5_content ul li{
+		width: 48%;
+	}
+
+	/************************
+	웹 에이전시 6번째 컨텐츠 스타일 영역 
+	wa_content6Wrap style
+	*************************/
+	div.wa_cont6_list{
+		width: 48%;
+	}
+
+	
+	/************************
+	웹 에이전시 7번째 컨텐츠 스타일 영역 
+	wa_content7Wrap style
+	*************************/
+	div.wa_cont7_list{
+		width: 48.5%;
+		height: 150px;
+	}
+	div.wa_cont7_list>h4{
+		text-align: center;
+		line-height: 160px;
+		font-size: 19px;
+		font-weight: bold;
+	}
+	div.wa_cont7_list img{
+		left : 50%;
+		bottom : 50%;
+		margin-left: -22.5px;
+		margin-bottom: -10px;
+	}
+
+}
+
+/*********************************
+	화면이 width 770 미만일 때 
+**********************************/
+@media screen and (max-width : 770px){
+
+}
