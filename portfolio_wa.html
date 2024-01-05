@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>포트폴리오 | 맑음 디지털에이전시</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="" href="css/malgum.css">
+	<link rel="stylesheet" type="" href="css/malgum_mediaQuery.css">
+	<link rel="stylesheet" type="" href="css/portfolio.css">
+	<script src="js/malgum.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="header_top_wrap">
+				<nav id="gnb">
+			<ul id="gnbL" >
+				<li class="MainService gnbL_li">
+					<a href="./what_we_do.html" id="serviceIntro">
+						<span >서비스 소개</span>
+					</a>
+				</li>
+
+				<li class="gnbL_li">
+					<a href="#" id="gnb_portfolio" >
+						<span >포트폴리오</span>
+					</a>
+					<div class="dept2Wrap dw_1 ">
+						<ul class=" portfolio_pc">
+							<li>
+								<a href="#">All</a>
+							</li>
+							<li>
+								<a href="#">웹에이전시</a>
+							</li>
+							<li>
+								<a href="#">디자인에이전시</a>
+							</li>
+							<li>
+								<a href="#">소프트웨어 개발</a>
+							</li>
+							<li>
+								<a href="#">통합운영</a>
+							</li>
+							<li>
+								<a href="#">홍보마케팅</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="gnbL_li">
+					<a href="#" id="gnb_inquiry">
+						<span>상담문의</span>
+					</a>
+					<div class="dept2Wrap dw_2">
+						<ul class="">
+							<li>
+								<a href="#">프로젝트 상담</a>
+							</li>
+							<li>
+								<a href="#">수출바우처 상담</a>
+							</li>
+							<li>
+								<a href="#">상담안내</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<h1>
+				<a href="index.html" id="logo">맑음</a>
+			</h1>
+			<ul id="gnbR" >
+				<li class="gnbR_li">
+					<a href="#" id="gnb_malgumStrory">
+						<span>맑음이야기</span>
+					</a>
+
+					<div class="dept2Wrap dw_3">
+						<ul class="">
+							<li>
+								<a href="#">맑음소식</a>
+							</li>
+							<li>
+								<a href="#">맑음이야기</a>
+							</li>
+							<li>
+								<a href="#">스터디룸</a>
+							</li>
+							<li>
+								<a href="#">칼럼</a>
+							</li>
+							<li>
+								<a href="#">고객리뷰</a>
+							</li>
+							<li>
+								<a href="#">뉴스레터</a>
+							</li>
+						</ul>
+					</div>
+
+
+				</li>
+				<li class="gnbR_li">
+					<a href="#" id="gnb_malgumIntroduce">
+						<span>맑음소개</span>
+					</a>
+					<div class="dept2Wrap dw_4">
+						<ul class="">
+							<li>
+								<a href="#">맑음소개</a>
+							</li>
+							<li>
+								<a href="#">연혁</a>
+							</li>
+							<li>
+								<a href="#">조직구성</a>
+							</li>
+							<li>
+								<a href="#">고객사</a>
+							</li>
+							<li>
+								<a href="#">채용안내</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div id="consultWrap">
+				<a href="#">
+					<span>상담하기</span>
+				</a>
+			</div>	
+
+			
+		</nav>
+			</div>
+
+			
+
+
+			<!-- width 1100이하일 때 보일 네비게이션 -->
+			<nav id="mobileGnb">
+				<div class="menuBar">
+					<a href="#" class="hambergerBtn">
+						<span class="material-symbols-outlined   burgerBtn">menu</span>
+						<span class="material-symbols-outlined closeBtn">
+							close
+						</span>
+					</a>
+					<a href="#" id="logo"><h1>맑음</h1></a>
+					<div id="consultWrap">
+						<a href="#">
+							<span></span>
+						</a>
+					</div>	
+					<div class="consultWrap_m_box">
+						<div id="consultWrap_m">
+							<a href="#">
+								<span>상담하기</span>
+							</a>
+						</div>	
+					</div>
+				</div>
+
+				<!-- 아코디언 -->
+				<div id="gnb_m_wrap">
+					<ul class="gnb_m ">
+						<li><a href="#">서비스소개</a>
+							<span class="material-symbols-outlined ">
+								expand_more
+							</span>
+
+							<ul class="gnb_m_dept2 ">
+								<li >
+									<a href="#">웹에이전시</a><span class="material-symbols-outlined">
+										expand_more
+									</span>
+									<ul class="gnb_m_dept3">
+										<li><a href="./what_we_do.html">사업부소개</a></li>
+										<li><a href="./responsive-website.html">반응형 홈페이지</a></li>
+										<li><a href="./pc-website.html">홈페이지</a></li>
+										<li><a href="./mobile-website.html">모바일 홈페이지</a></li>
+										<li><a href="./online-shopping-mall.html">쇼핑몰</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">디자인에이전시</a><span class="material-symbols-outlined">
+										expand_more
+									</span>
+									<ul class="gnb_m_dept3">
+										<li><a href="#">사업부소개</a></li>
+										<li><a href="#">편집 디자인</a></li>
+										<li><a href="#">브랜딩 디자인</a></li>
+										<li><a href="#">패키지 디자인</a></li>
+										<li><a href="#">일러스트/인포그래픽</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#">소프트웨어 개발</a><span class="material-symbols-outlined">
+										expand_more
+									</span>
+									<ul class="gnb_m_dept3">
+										<li><a href="#">모니터링시스템</a></li>
+										<li><a href="#">예지보전시스템</a></li>
+										<li><a href="#">웹솔루션</a></li>
+										<li><a href="#">웹보안컨설팅</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">통합운영</a><span class="material-symbols-outlined">
+										expand_more
+									</span>
+									<ul class="gnb_m_dept3">
+										<li><a href="#">사업부소개</a></li>
+										<li><a href="#">통합운영</a></li>
+										<li><a href="#">유지관리</a></li>
+										<li><a href="#">홈페이지 개선</a></li>
+										<li><a href="#">부가서비스</a></li>
+										<li><a href="#">웹호스팅</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">홍보마케팅</a><span class="material-symbols-outlined">
+										expand_more
+									</span>
+									<ul class="gnb_m_dept3">
+										<li><a href="#">사업부소개</a></li>
+										<li><a href="#">키워드광고</a></li>
+										<li><a href="#">SNS마케팅</a></li>
+										<li><a href="#">매체광고</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">포트폴리오</a><span class="material-symbols-outlined">
+							expand_more
+						</span>
+						<ul class="gnb_m_dept2">
+							<li><a href="#">ALL</a></li>
+							<li><a href="#">웹에이전시</a></li>
+							<li><a href="#">디자인에이전시</a></li>
+							<li><a href="#">소프트웨어 개발</a></li>
+							<li><a href="#">통합운영</a></li>
+							<li><a href="#">홍보마케팅</a></li>
+						</ul>
+					</li>
+					<li><a href="#">맑음이야기</a><span class="material-symbols-outlined">
+						expand_more
+					</span>
+					<ul class="gnb_m_dept2">
+						<li><a href="#">맑음소식</a></li>
+						<li><a href="#">맑음이야기</a></li>
+						<li><a href="#">스터디룸</a></li>
+						<li><a href="#">칼럼</a></li>
+						<li><a href="#">고객리뷰</a></li>
+						<li><a href="#">뉴스레터</a></li>
+					</ul>
+				</li>
+				<li><a href="#">상담문의</a><span class="material-symbols-outlined">
+					expand_more
+				</span>
+				<ul class="gnb_m_dept2">
+					<li><a href="#">프로젝트상담</a></li>
+					<li><a href="#">정부지원사원</a></li>
+					<li><a href="#">상담안내</a></li>
+				</ul>
+			</li>
+			<li><a href="#">맑음소개</a><span class="material-symbols-outlined">
+				expand_more
+			</span>
+			<ul class="gnb_m_dept2">
+				<li><a href="#">맑음소개</a></li>
+				<li><a href="#">연혁</a></li>
+				<li><a href="#">조직구성</a></li>
+				<li><a href="#">고객사</a></li>
+				<li><a href="#">채용안내</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</div> <!-- #accordionBox end -->
+
+</nav>
+<div class="serviceDept2">
+						<ul class="dept2">
+							<li>
+								<a href="./what_we_do.html">웹에이전시</a>
+								<ul class="dept3">
+									<li>
+										<a href="./what_we_do.html">사업부소개</a>
+									</li>
+									<li>
+										<a href="./responsive-website.html">반응형 홈페이지</a>
+									</li>
+									<li><a href="./pc-website.html">홈페이지</a></li>
+									<li><a href="./mobile-website.html">모바일 홈페이지</a></li>
+									<li><a href="./online-shopping-mall.html">쇼핑몰</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">디자인에이전시</a>
+								<ul class="dept3">
+									<li>
+										<a href="#">사업부소개</a>
+									</li>
+									<li>
+										<a href="#">편집 디자인</a>
+									</li>
+									<li>
+										<a href="#">브랜딩 디자인</a>
+									</li>
+									<li>
+										<a href="#">패키지 디자인</a>
+									</li>
+									<li>
+										<a href="#">일러스트/인포그래픽</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">소프트웨어 개발</a>
+								<ul class="dept3">
+									<li>
+										<a href="#">웹어플리케이션</a>
+									</li>
+									<li>
+										<a href="#">모니터링시스템</a>
+									</li>
+									<li>
+										<a href="#">예지보전시스템</a>
+									</li>
+									<li>
+										<a href="#">웹보안</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">통합운영</a>
+								<ul class="dept3">
+									<li>
+										<a href="#">사업부소개</a>
+									</li>
+									<li>
+										<a href="#">통합운영</a>
+									</li>
+									<li>
+										<a href="#">유지관리</a>
+									</li>
+									<li>
+										<a href="#">홈페이지 개선</a>
+									</li>
+									<li>
+										<a href="#">부가서비스</a>
+									</li>
+									<li>
+										<a href="#">웹호스팅</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">홍보마케팅</a>
+								<ul class="dept3">
+									<li>
+										<a href="#">사업부소개</a>
+									</li>
+									<li>
+										<a href="#">키워드광고</a>
+									</li>
+									<li>
+										<a href="#">SNS마케팅</a>
+									</li>
+									<li>
+										<a href="#">매체광고</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+</header>	<!-- 헤더 네비게이션바 영역 -->
+
+<!-- ##### 컨텐츠 ######### -->
+<!-- 상단 텍스트  -->
+<div class="jumbotron jumbotron-fluid">
+	<div class="container d-flex justify-content-center align-items-center">
+		<h1 class="h2 font-weight-bold">웹에이전시</h1>
+	</div>
+</div>
+
+<!-- 검색 영역 -->
+<div class="container">
+	<div class="row">
+		<div class="col-12 d-flex justify-content-between align-items-center">
+			<div class="p_wa_txt font-weight-bold pl-4">
+				웹에이전시 포트폴리오
+			</div>
+			<div class="p_wa_searchBox">
+				<input class="p_search" type="text" title="검색어 입력창" placeholder="검색어를 입력해주세요." maxlength="50" >
+			</div>
+			<img style="" class="searchImg" src="./img/what_we_do/search.svg" alt="">
+		</div>
+	</div>
+
+	<div class="w-100 my-5 cs-border-top"></div>
+
+	<div class="row my-5">
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">용도</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>기업.단체 소개</option>
+				<option>브랜드 소개</option>
+				<option>플렛폼 비즈니스</option>
+				<option>글로벌 비즈니스</option>
+				<option>쇼핑몰</option>
+				<option>서비스</option>
+				<option>커뮤니티</option>
+			</select>
+		</div>
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">통합운영 종류</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>기업.단체 소개</option>
+				<option>브랜드</option>
+			</select>
+		</div>
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">업종</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>금융.보험.투자.자산운용</option>
+				<option>인공지능.빅테이터.로봇.자동화</option>
+				<option>컴퓨터.보안.솔류션.프로그램</option>
+				<option>기계.자동차.조선.항공</option>
+				<option>제조.생산.가공</option>
+				<option>반도체.전자.전기</option>
+				<option>화학.소재.재료.자재</option>
+				<option>바이오.생명공학.제약</option>
+				<option>건축.건설.토목.설계.인테리어</option>
+				<option>가구.주방.침구.생활용품</option>
+				<option>디자인.광고.홍보.마케팅</option>
+				<option>부동산.임대.분양.시행</option>
+				<option>유통.물류.운송.수출입.풀필먼트</option>
+				<option>뷰티.화장품.미용</option>
+				<option>병원.의료기기</option>
+				<option>환경.신재생에너지.클리닝</option>
+				<option>관공서.기관.연구소</option>
+				<option>전시.문화.예술</option>
+				<option>유아.어린이.청소년</option>
+				<option>서비스.에이전시.대행사</option>
+				<option>교육.학교.학원</option>
+				<option>패션.의류.보석.장신구</option>
+				<option>게임.취미.술.담배</option>
+				<option>건강.헬스.운동</option>
+				<option>헤드헌팅.채용.HR</option>
+				<option>레저.여행.숙박</option>
+				<option>프랜차이즈.창업</option>
+				<option>음식.식품</option>
+				<option>단체.협회.모임</option>
+				<option>종교</option>
+			</select>
+		</div>
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">수상</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>Web Award Korea</option>
+				<option>GDWEB Design Awards</option>
+				<option>& Award</option>
+				<option>K-Award</option>
+				<option>Red Dot Award</option>
+				<option>iF DESIGN AWARD</option>
+				<option>IDEA Design Award</option>
+			</select>
+		</div> 
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">언어</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>한국어</option>
+				<option>영어</option>
+				<option>중국어</option>
+				<option>일본어</option>
+				<option>독일어</option>
+				<option>프랑스어</option>
+				<option>스페인어</option>
+				<option>러시아어</option>
+				<option>베트남어</option>
+			</select>
+		</div>
+		<div class="col-sm-2">
+			<p class="cs-font-size-15">정부지원사업</p>
+			<select class="form-control">
+				<option>전체</option>
+				<option>2020 수출바우처</option>
+				<option>2019 수출바우처</option>
+				<option>2018 수출바우처</option>
+				<option>2017 수출바우처</option>
+				<option>2016 수출역량강화사업</option>
+				<option>2015 수출역량강화사업</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+	</div><!-- row -->
+
+	<div class="row">
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+	</div><!-- row -->
+
+	<div class="row">
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="wa_cont5_list">
+				<div class="wa_cont5_list_headImg">
+					<img src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
+				</div>
+				<div class="wa_cont5_list_txt">
+					<h5>메테우스자산운용 Metheus_리액트</h5>
+					<p>메테우스자산운용</p>
+					<br>
+					<p>기업.단체 소개, 한국어,</p>
+					<p>GDWEB Design Awards</p>
+				</div>
+				<div class="wa_cont5_list_bottomImg">
+					<img src="./img/what_we_do/award_152.png" alt="#">
+				</div>
+			</div>
+		</div>
+
+	</div><!-- row -->
+
+	
+</div><!-- container -->
+
+
+
+
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footerWrap">
+			<div class="footerNavWrap">
+				<ul class="footerNav">
+					<li>
+						<a href="#">
+							맑음 소개서
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							맑음 채용
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							개인정보취급방침
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							찾아오시는 길
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							맑음 PMS
+						</a>
+					</li>
+				</ul>	
+			</div>
+
+			<div class="footerTextWrap">
+				<div class="footerTextBox">
+					<h2>
+						<a href="#">맑음</a>
+					</h2>
+					<div class="footer_info">
+						<p class="address">
+							서울특별시 강남구 테헤란로 13길 8-10, 8층(역삼동, 동영빌딩) [06133]
+						</p>
+						<ul>
+							<li>전화번호 02-2051-9551</li>
+							<li>팩스 02-2051-9552</li>
+							<li>이메일 netstar@malgum.com</li>
+						</ul>
+
+						<p class="copy">Copyright &copy; MALGUM Co., Ltd. All Rights Reserved.</p>
+					</div>
+					<div class="footerTel">
+						<p>전화상담</p>
+						<strong>02.2051.9551</strong>
+					</div>
+					<div class="footer_sns">
+						<ul>
+							<li class="footer_sns_fb">
+								<a href="#">facebook</a>
+							</li>
+							<li class="footer_sns_nb">
+								<a href="#">naver blog</a>
+							</li>
+							<li class="footer_sns_in">
+								<a href="#">instagram</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer><!-- footer 영역  -->
+	</div><!-- wrapper -->
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
