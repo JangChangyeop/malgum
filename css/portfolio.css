@@ -1,0 +1,45 @@
+.cs-border-top {
+	border-top: 1px solid #E2E2E2;
+}
+.cs-font-size-15{
+	font-size: 15px;
+}
+/*상단 텍스트 스타일*/
+div.jumbotron{
+	margin-top : 100px;
+}
+
+/*검색 영역 스타일*/
+div.p_wa_txt{
+	position: relative;
+}
+div.p_wa_txt::after{
+	content : '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	left : 5px;
+	top : 8px;
+}
+div.p_wa_searchBox{
+	width: 350px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: #F1F1F1;
+	position: absolute;
+	right: 0px;
+}
+input.p_search {
+	width: 100%;
+	border : none;
+	outline : none; 
+	background-color: rgba(0,0,0,0);
+}
+
+img.searchImg{
+	z-index: 1;
+	cursor: pointer;
+}
