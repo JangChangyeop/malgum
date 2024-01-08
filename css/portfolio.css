@@ -43,3 +43,13 @@ img.searchImg{
 	z-index: 1;
 	cursor: pointer;
 }
+
+.row .wa_cont5_list{
+	margin-bottom: 50px;
+	border : 1px solid lightgray;
+	position: relative;
+}
+
+.wa_cont5_list_bottomImg{
+
+}
