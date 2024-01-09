@@ -3,6 +3,7 @@
 }
 .cs-font-size-15{
 	font-size: 15px;
+	font-weight: bold;
 }
 /*상단 텍스트 스타일*/
 div.jumbotron{
@@ -12,6 +13,7 @@ div.jumbotron{
 /*검색 영역 스타일*/
 div.p_wa_txt{
 	position: relative;
+	line-height: 30px;
 }
 div.p_wa_txt::after{
 	content : '';
@@ -20,16 +22,16 @@ div.p_wa_txt::after{
 	height: 12px;
 	background-color: black;
 	border-radius: 50%;
-	position: absolute;
-	left : 5px;
-	top : 8px;
+	position: relative;
+	left : -20px;
+	top : -21px;
 }
 div.p_wa_searchBox{
 	width: 350px;
 	padding: 10px 20px;
 	border-radius: 20px;
 	background-color: #F1F1F1;
-	position: absolute;
+	position: relative;
 	right: 0px;
 }
 input.p_search {
@@ -42,7 +44,16 @@ input.p_search {
 img.searchImg{
 	z-index: 1;
 	cursor: pointer;
+	position: absolute;
+	right : 20px;
+	bottom: 15px;
 }
+
+/*select option 영역*/
+p.cs-font-size-15 + select.form-control{
+	margin-bottom: 20px;
+}
+
 
 .row .wa_cont5_list{
 	margin-bottom: 50px;
@@ -50,6 +61,3 @@ img.searchImg{
 	position: relative;
 }
 
-.wa_cont5_list_bottomImg{
-
-}
