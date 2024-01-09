@@ -10,7 +10,9 @@
 	<link rel="stylesheet" type="" href="css/malgum.css">
 	<link rel="stylesheet" type="" href="css/malgum_mediaQuery.css">
 	<link rel="stylesheet" type="" href="css/portfolio.css">
+	<link rel="stylesheet" type="" href="css/portfolio_mediaQuery.css">
 	<link rel="stylesheet" type="" href="css/what_we_do.css">
+	<link rel="stylesheet" type="" href="css/what_we_do_mediaQuery.css">
 	<script src="js/malgum.js"></script>
 </head>
 <body>
@@ -394,23 +396,24 @@
 </div>
 
 <!-- 검색 영역 -->
-<div class="container">
+<div class="container px-0" id="portfolioWrap">
 	<div class="row">
-		<div class="col-12 d-flex justify-content-between align-items-center">
-			<div class="p_wa_txt font-weight-bold pl-4">
-				웹에이전시 포트폴리오
-			</div>
-			<div class="p_wa_searchBox">
-				<input class="p_search" type="text" title="검색어 입력창" placeholder="검색어를 입력해주세요." maxlength="50" >
-			</div>
+		<div class="col-md-8 p_wa_txt font-weight-bold pl-4">
+			웹에이전시 포트폴리오
+		</div>
+		<div class="col-md-4 col-sm-12 float-right p_wa_searchBox">
+			<input class="p_search" type="text" title="검색어 입력창" placeholder="검색어를 입력해주세요." maxlength="50" >
 			<img style="" class="searchImg" src="./img/what_we_do/search.svg" alt="">
 		</div>
+			
+
+		
 	</div>
 
 	<div class="w-100 my-5 cs-border-top"></div>
 
 	<div class="row my-5">
-		<div class="col-sm-2">
+		<div class="col-md-2">
 			<p class="cs-font-size-15">용도</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -423,7 +426,7 @@
 				<option>커뮤니티</option>
 			</select>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-md-2 ">
 			<p class="cs-font-size-15">통합운영 종류</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -431,7 +434,7 @@
 				<option>브랜드</option>
 			</select>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-md-2">
 			<p class="cs-font-size-15">업종</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -467,7 +470,7 @@
 				<option>종교</option>
 			</select>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-md-2">
 			<p class="cs-font-size-15">수상</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -480,7 +483,7 @@
 				<option>IDEA Design Award</option>
 			</select>
 		</div> 
-		<div class="col-sm-2">
+		<div class="col-md-2">
 			<p class="cs-font-size-15">언어</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -495,7 +498,7 @@
 				<option>베트남어</option>
 			</select>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-md-2">
 			<p class="cs-font-size-15">정부지원사업</p>
 			<select class="form-control">
 				<option>전체</option>
@@ -510,8 +513,8 @@
 	</div>
 
 
-	<div class="row">
-		<div class="col-3">
+	<div class="row px-0">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -529,7 +532,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -547,7 +550,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -565,7 +568,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -583,10 +586,10 @@
 			</div>
 		</div>
 
-	</div><!-- row -->
+	
 
-	<div class="row">
-		<div class="col-3">
+
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -604,7 +607,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -622,7 +625,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -640,7 +643,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -658,10 +661,10 @@
 			</div>
 		</div>
 
-	</div><!-- row -->
+	
 
-	<div class="row">
-		<div class="col-3">
+
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -679,7 +682,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -697,7 +700,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -715,7 +718,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-xl-3 col-md-4 col-sm-6">
 			<div class="wa_cont5_list">
 				<div class="wa_cont5_list_headImg">
 					<img class="img-fluid" src="./img/what_we_do/메테우스자산운용_썸네일new.png" alt="">
@@ -806,7 +809,7 @@
 						<p class="address">
 							서울특별시 강남구 테헤란로 13길 8-10, 8층(역삼동, 동영빌딩) [06133]
 						</p>
-						<ul>
+						<ul class="ml-0">
 							<li>전화번호 02-2051-9551</li>
 							<li>팩스 02-2051-9552</li>
 							<li>이메일 netstar@malgum.com</li>
