@@ -1,5 +1,3 @@
-
-
 $(function(){
     setInterval( () => {
 
@@ -127,35 +125,39 @@ $(function(){
             // 모바일 네비게이션 클릭 시 index() 따와서 dept2 open
             gnb_m_li.click(function(){
                 let target = $(this);
-                let numLi = target.index();
+                let i = target.index();
 
                
+               
                 //클릭한 li 배경색 파랑으로 
-                if(gnb_m_li.eq(numLi).hasClass('bg_blue1') ){
-                    gnb_m_li.eq(numLi).removeClass('bg_blue1');    
+               
+                if(gnb_m_li.eq(i).hasClass('bg_blue1') ){
+                    // gnb_m_li.eq(i).removeClass('bg_blue1');    
                 } else {
                     gnb_m_li.removeClass('bg_blue1');
-                    gnb_m_li.eq(numLi).addClass('bg_blue1');
+                    gnb_m_li.eq(i).addClass('bg_blue1');
                 }
-                
 
-                
+
+
             })
 
             //모바일 네비게이션 클릭 시 index() 따와서 dept3 open
             gnb_m_dept2_li.click(function(){
                 let tg = $(this);
                 let i = tg.index();
-
-                if( gnb_m_dept2_li.eq(i).hasClass('bg_blue2') ){
-                     gnb_m_dept2_li.removeClass('bg_blue2');
-                } else {
-                    gnb_m_dept2_li.removeClass('bg_blue2');
-                    gnb_m_dept2_li.eq(i).addClass('bg_blue2');    
-                }
-
                 
+                
+                var num = -1
+                while( num < 5){
+                    if( num != i){
+                        gnb_m_dept2_li.eq(num).removeClass('bg_blue2');
+                    } 
 
+                    num++
+                }
+                gnb_m_dept2_li.eq(i).toggleClass('bg_blue2');
+                
                 
             });
 
