@@ -1,0 +1,250 @@
+.cs-px-15{
+	padding: 0px 15px;
+}
+.bg_white{
+	background-color: white;
+}
+.bg-lightgray {
+	background-color: #F3F3F3;
+}
+
+/*최 상단 텍스트 영역*/
+div.board_write_content01{
+	width: 100%;
+	position: relative;
+}
+div.bw_textBox{
+	width: 1170px;
+	height: 350px;
+	margin : 0 auto;
+	margin-top : 100px;
+	margin-bottom: 30px;
+}
+
+div.bw_titleText{
+	width: 100%;
+	padding: 70px 0px;
+}
+div.bw_titleText>p{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+div.bw_bodyText>p {
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+/*희망 상담 분야 영역*/
+div.bw_hope_Consult{
+	width: 100%;
+	background-color: #EFEFEF;
+	position : relative;
+	padding : 70px 0px;
+}
+/*title 텍스트 영역*/
+div.bw_hcTxtBox::before{
+	content:'';
+	display: flex;
+	position: relative;
+	top : -8px;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	margin : 5px;
+}
+div.bw_hcTxtBox{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+}
+div.bw_hcTxtBox>p {
+	font-size: 30px;
+	font-weight: bold;
+}
+/*content 상담분야 선택 영역*/
+div.bw_hc_contentBox{
+	width: 1170px;
+	margin: 0 auto;
+}
+div.hc_content{
+	display: flex;
+
+}
+div.hc_cont_title{
+	width: 150px;
+	height: 28px;
+	margin : 3px;
+	border-radius: 20px;
+	font-size: 14px;
+	background-color: #A9A9A9;
+	color : white;
+	text-align: center;
+	line-height: 28px;
+	font-weight: bold;
+}
+div.hc_cont_list{
+	height: 28px;
+}
+div.hc_cont_list>p {
+	border : 1px solid #A9A9A9;
+	border-radius: 20px;
+	margin: 3px 5px;
+	padding: 0px 15px;
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 26px;
+	color: #6c757d;
+}
+
+
+/*고객 정보 입력*/
+div.bw_customer_Info_Form{
+	width: 100%;
+	position: relative;
+}
+div.bw_formBox{
+	width: 1170px;
+	margin : 0 auto;
+	padding: 70px 0px;
+}
+
+/*고객 정보 입력 상단 텍스트 영역*/
+div.bw_formTitle::before{
+	content:'';
+	display: flex;
+	position: relative;
+	top : -8px;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	margin : 5px;
+}
+div.bw_formTitle{
+	display: flex;
+	margin-bottom: 30px;
+}
+div.bw_formTitle>p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*고객 정보 입력 폼 */
+div.bw_formInput{
+	width: 100%;
+	border-bottom : 1px solid #D7D7D7;
+	padding-bottom: 20px;
+}
+div.essential_item::before{
+	content : '';
+	display: flex;
+	justify-content: flex-end;
+	width: 15px;
+	height: 15px;
+	background-image : url("../img/board_write/checkIcon.png");
+	background-repeat: no-repeat;
+	margin : 5px;
+}
+div.essential_item{
+	display: flex;
+}
+
+div.essential_item>p{
+	font-weight: lighter;
+}
+div.bw_fromTable{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/*입력 테이블 스타일*/
+div.bw_fromTable{
+	padding: 0px 15px;
+}
+
+div.bw_fromTable div.row{
+	border-bottom: 1px solid #D7D7D7;
+	display: flex;
+	align-items: center;
+
+}
+
+div.bw_fromTable div.col-3 {
+	padding: 20px 0px 5px 30px;
+
+	background-color: #F5F5F5;
+}
+div.col-3>p{
+	font-weight: bold;
+}
+
+div.bw_fromTable div.col-9{
+	padding: 10px 0px 5px 30px;
+}
+div.col-9 input[type='text']{
+	width: 400px;
+	height: 35px;
+	border : 1px solid #D7D7D7;
+}
+textarea.consultContent{
+	border: 1px solid #ccc;
+    padding: 15px;
+    height: 133px;
+    box-sizing: border-box;
+    width: 817px;
+    height: 107px;
+}
+
+div.collection_agree{
+	width: 100%;
+	height: 50px;
+	background-color: #F0F0F0;
+	padding: 15px;
+	border-bottom : 1px solid #D7D7D7;
+}
+div.collection_agree>p{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.collection_list{
+	border : 1px solid #D7D7D7;
+	padding: 20px 20px;
+}
+
+li.cl_deth1 {
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+ul.cl_deth2Box {
+	font-weight: lighter;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #9B9B9B;
+}
+span.checkbox_p{
+	font-size: 14px;
+	color: #9B9B9B !important;
+	font-weight: lighter;
+	position: relative;
+	top : -3px
+}
+input[type=checkbox]{
+	width: 20px;
+	height: 20px;
+}
+
+/*정보 입력 폼 신청, 취소 버튼 스타일*/
+input.applicationBtn{
+	width: 180px;
+	height: 50px;
+	background-color: white;
+	font-size: 14px;
+}
+input.applicationBtn:hover {
+	background-color: black;
+	color : white;
+}

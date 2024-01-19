@@ -1,0 +1,12 @@
+/*********************************
+	화면이 width 1100 미만일 때 
+**********************************/
+@media screen and (max-width : 1100px){
+
+
+
+	/*footer*/
+	footer#footer {
+		margin-top: 0px;
+	}
+}
