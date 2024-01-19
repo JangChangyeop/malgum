@@ -10,7 +10,10 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="" href="css/malgum.css">
 	<link rel="stylesheet" type="" href="css/malgum_mediaQuery.css">
+	<link rel="stylesheet" type="" href="css/portfolio_mediaQuery.css">
 	<link rel="stylesheet" type="" href="css/board_write.css">
+	<link rel="stylesheet" type="" href="css/board_write_mediaQuery.css">
+
 	<script src="js/malgum.js"></script>
 </head>
 <body>
@@ -54,7 +57,7 @@
 				</li>
 
 				<li class="gnbL_li">
-					<a href="#" id="gnb_inquiry">
+					<a href="./board_write.html" id="gnb_inquiry">
 						<span>상담문의</span>
 					</a>
 					<div class="dept2Wrap dw_2">
@@ -77,7 +80,7 @@
 			</h1>
 			<ul id="gnbR" >
 				<li class="gnbR_li">
-					<a href="#" id="gnb_malgumStrory">
+					<a href="./board_write.html" id="gnb_malgumStrory">
 						<span>맑음이야기</span>
 					</a>
 
@@ -251,7 +254,7 @@
 							<li><a href="#">홍보마케팅</a></li>
 						</ul>
 					</li>
-					<li><a href="#">맑음이야기</a><span class="material-symbols-outlined">
+					<li><a href="./board_write.html">맑음이야기</a><span class="material-symbols-outlined">
 						expand_more
 					</span>
 					<ul class="gnb_m_dept2">
@@ -263,7 +266,7 @@
 						<li><a href="#">뉴스레터</a></li>
 					</ul>
 				</li>
-				<li><a href="#">상담문의</a><span class="material-symbols-outlined">
+				<li><a href="./board_write.html">상담문의</a><span class="material-symbols-outlined">
 					expand_more
 				</span>
 				<ul class="gnb_m_dept2">
@@ -605,11 +608,11 @@
 						</div>
 
 						<!-- 상담할 내용 -->
-						<div class="row">
+						<div class="row bg-lightgray">
 							<div class="col-3" >
 								<p >상담할 내용</p>
 							</div>
-							<div class="col-9">
+							<div class="col-9 bg_white">
 								<textarea class="consultContent"></textarea>
 							</div>
 						</div> 
@@ -676,17 +679,17 @@
 
 				</div> <!-- bw_formInput -->		
 
-				<div class="row">
-					<div class="col">
-						<p>상기 내용으로 프로젝트 상담을 신청합니다.</p>
+				<div class="row mt-5">
+					<div class="col d-flex flex-column align-items-center">
+						<p class="">상기 내용으로 프로젝트 상담을 신청합니다.</p>
 						<p>2024년 1월 16일</p>
 					</div>
 				</div>	
 
-				<div class="row">
-					<div class="col">
-						<input type="submit">
-						<input type="reset">
+				<div class="row mt-2">
+					<div class="col d-flex justify-content-center">
+						<input class="applicationBtn mx-2" type="submit" value="신청하기">
+						<input class="applicationBtn mx-2" type="reset" value="취소">
 					</div>
 				</div>
 				</form>
@@ -697,7 +700,78 @@
 
 
 	</div> <!-- 고객정보입력 -->
+<!-- footer -->
+	<footer id="footer">
+		<div class="footerWrap">
+			<div class="footerNavWrap">
+				<ul class="footerNav">
+					<li>
+						<a href="#">
+							맑음 소개서
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							맑음 채용
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							개인정보취급방침
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							찾아오시는 길
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							맑음 PMS
+						</a>
+					</li>
+				</ul>	
+			</div>
 
+			<div class="footerTextWrap">
+				<div class="footerTextBox">
+					<h2>
+						<a href="#">맑음</a>
+					</h2>
+					<div class="footer_info">
+						<p class="address">
+							서울특별시 강남구 테헤란로 13길 8-10, 8층(역삼동, 동영빌딩) [06133]
+						</p>
+						<ul>
+							<li>전화번호 02-2051-9551</li>
+							<li>팩스 02-2051-9552</li>
+							<li>이메일 netstar@malgum.com</li>
+						</ul>
+
+						<p class="copy">Copyright &copy; MALGUM Co., Ltd. All Rights Reserved.</p>
+					</div>
+					<div class="footerTel">
+						<p>전화상담</p>
+						<strong>02.2051.9551</strong>
+					</div>
+					<div class="footer_sns">
+						<ul>
+							<li class="footer_sns_fb">
+								<a href="#">facebook</a>
+							</li>
+							<li class="footer_sns_nb">
+								<a href="#">naver blog</a>
+							</li>
+							<li class="footer_sns_in">
+								<a href="#">instagram</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer><!-- footer 영역  -->
 </div> <!-- .wrapper -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
