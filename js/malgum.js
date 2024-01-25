@@ -1,4 +1,6 @@
 $(function(){
+
+    // index 페이지의 메인 시계 함수
     setInterval( () => {
 
           const date = new Date();
@@ -17,6 +19,7 @@ $(function(){
 
         });
 
+    // 네비게이션 바에서 마우스 떠 날 때 함수 
     $("html").mouseleave(function(){
      serviceDept2.hide();
      dept2Wrap.hide();
