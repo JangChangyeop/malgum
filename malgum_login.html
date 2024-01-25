@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MALGUM</title>
+	<title>맑음-로그인</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="css/malgum.css">
-	<link rel="stylesheet" type="text/css" href="css/malgum_mediaQuery.css">
-	<link rel="stylesheet" type="text/css" href="css/malgum_story.css">
+	<link rel="stylesheet" type="" href="css/malgum.css">
+	<link rel="stylesheet" type="" href="css/malgum_mediaQuery.css">
 	<script src="js/malgum.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		
 		<header id="header">
 			<div class="header_top_wrap">
 				<nav id="gnb">
@@ -397,315 +395,17 @@
 </div>
 
 
-<div class="story_headerContent">
-	<div class="story_hc_box">
-		<div class="story_hc_headerTxt">
-			<h1>맑음이야기</h1>
-		</div>
-		<div class="story_hc_selectBox ">
-			<select name="listKeyword" id="" class="story_hc_select" >
-				<option value="최신글">최신글</option>
-				<option value="인기글">인기글</option>
-			</select>	
-		</div>
-		
-	</div>
-</div>
+<div class="login-wrapper">
+        <h2>Login</h2>
+        <form method="post" action="서버의url" id="login-form">
+            <input type="text" name="userName" placeholder="아이디">
+            <input type="password" name="userPassword" placeholder="Password">
+            <input type="submit" value="로그인">
+            <input type="button" value="뒤로가기" onclick="history.back(-1)">
+        </form>
+    </div>
 
 
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-			<h3>맑음소식</h3>
-		</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/썸썸썸.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>2022 웹 어워드 코리아 분야별 대상 3관왕, 최우수상 2관왕 수상</h5>
-				<p>2022-12-28 <span>3,738</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/썸썸썸썸썸.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>2022 K-awards 최우수상 수상</h5>
-				<p>2022-12-21 <span>3,040</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/B_맑음_소식(720_x_600픽셀)_(2).png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>2022 iF 디자인 어워드 (iF DESIGN AWARD 2022) 본상 수상</h5>
-				<p>2022-07-08 <span>5,852</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/제목을_입력해주세요_-001_(5).jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>2021 웹어워드 코리아 최우수상 수상</h5>
-				<p>2022-12-30 <span>5,645</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
-
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-		<h3>맑음이야기</h3>
-	</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/태양의서커스_메인_1.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>맑음의 복지 문화비 지원으로 즐긴 태양의 서커스 관람 후기입니다~!</h5>
-				<p>2023-12-28 <span>153</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/Frame_53_1.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>맑음의 복지 문화비 지원으로, 뮤지컬 '레베카'를 관람하고 왔습니다!</h5>
-				<p>2023-11-14 <span>551</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/목록.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>맑음의 복지 중 하나! 문화비지원!! 뷰티풀 민트 페스티벌에 다녀왔어요~</h5>
-				<p>2023-06-15 <span>1,818</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/제목을_입력해주세요_-001_(5).jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>2022 맑음 송년문화행사 이집트 미라전, 모차르트502</h5>
-				<p>2023-01-02 <span>3,142</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
-
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-			<h3>스터디룸</h3>
-		</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/generative-ai.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>활용도 높은 생성형 AI소개</h5>
-				<p>2023-07-14 <span>2,553</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/썸네일_GA.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>구글 애널리틱스(Google Analytics) GA 용어 총 정리</h5>
-				<p>2022-07-11 <span>13,076</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/https_1.png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>보안서버인증서 알아보기</h5>
-				<p>2021-11-17 <span>5,799</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/맑음스터디_목록이미지_레이아웃.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>그로스해킹(Growth hacking) 성장을 위한 해킹</h5>
-				<p>2019-10-16 <span>9,818</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
-
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-			<h3>칼럼</h3>
-		</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/칼럼리스트(240_200).png" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>변화와 혁신이 기업의 운명을 바꾼다</h5>
-				<p>2022-07-05 <span>5,259</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/메인720.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>일본과의 경제전쟁에서 반드시 이기자</h5>
-				<p>2019-08-07 <span>10,738</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/thumb_181204_02.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>중소기업의 소득주도 성장</h5>
-				<p>2018-08-27 <span>11,138</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/study_6.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>인공지능의 미래</h5>
-				<p>2016-03-20 <span>12,439</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
-
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-			<h3>고객리뷰</h3>
-		</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/2.gif" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>맑음의 패키지디자인으로 완성된 페이스모아</h5>
-				<p>2018-06-05 <span>8,268</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/3.gif" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>카탈로그 제작, 기획에서 부터 결과물까지 만족합니다.</h5>
-				<p>2018-06-05 <span>8,090</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/1.gif" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>수출기업, 카탈로그 제작.맑음을 만나게 되어 만족합니다.</h5>
-				<p>2018-06-05 <span>7,756</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/1.gif" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>진산유압 외국어 홈페이지로 글로벌 강소기업의 이미지를만들었습니다.</h5>
-				<p>2016-05-04 <span>10,837</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
-
-<div class="story_contentListwrapper">
-	<div class="stroy_contentHeaderTxt">
-			<h3>뉴스레터</h3>
-		</div>
-	<div class="story_contentListBox">
-		
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/list_221.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>THE 맑음 3월호 Vol.24</h5>
-				<p>2016-03-21 <span>11,305</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/list_220.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>THE 맑음 2월호 Vol.23</h5>
-				<p>2016-02-12 <span>8,672</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/list_219.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>THE 맑음 1월호 Vol.22</h5>
-				<p>2016-01-15 <span>10,248</span></p>
-			</div>
-		</div>
-
-		<div class="stroy_contentList">
-			<div class="s_cl_img">
-				<img src="./img/malgum_stroy/list_218.jpg" alt="#">
-			</div>
-			<div class="s_cl_txt">
-				<h5>뉴스레터 12월호</h5>
-				<p>2015-12-11 <span>10,190</span></p>
-			</div>
-		</div>
-
-	</div><!-- story_contentListBox -->
-</div><!-- story_contentListwrapper -->
 
 
 <!-- footer -->
@@ -750,7 +450,7 @@
 						<p class="address">
 							서울특별시 강남구 테헤란로 13길 8-10, 8층(역삼동, 동영빌딩) [06133]
 						</p>
-						<ul class="ml-0">
+						<ul>
 							<li>전화번호 02-2051-9551</li>
 							<li>팩스 02-2051-9552</li>
 							<li>이메일 netstar@malgum.com</li>
@@ -779,8 +479,12 @@
 			</div>
 		</div>
 
-	</footer><!-- footer 영역  -->
+	</footer>
 
-</div><!-- div.wrapper  -->
+
+	</div>  <!-- wrapper -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
