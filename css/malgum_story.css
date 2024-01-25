@@ -1,0 +1,91 @@
+/*최상단 content 영역 */
+div.story_headerContent{
+	width: 100%;
+	position: relative;
+	margin-top : 100px;
+}
+div.story_hc_box{
+	width: 1170px;
+	margin : 0 auto;
+	display : flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.story_hc_headerTxt{
+	padding: 70px 0px;
+	text-align: center;
+}
+div.story_hc_headerTxt>h1{
+	font-size: 32px;
+	font-weight: bold;
+}
+/*최신글, 인기글 select 박스*/
+select.story_hc_select{
+	width: 250px;
+	height: 50px;
+}
+
+/*게시글 리스트 스타일*/
+div.story_contentListwrapper{
+	width: 100%;
+	position: relative;
+}
+div.stroy_contentHeaderTxt{
+	text-align: center;
+	padding: 50px 0px 30px 0px;
+}
+div.stroy_contentHeaderTxt>h3{
+	font-size: 28px;
+	font-weight: bold;
+}
+div.story_contentListBox{
+	width: 1170px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 0px 80px;
+}
+div.stroy_contentList{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+}
+div.s_cl_img>img{
+	height: 200px;
+	width: 100%;
+	
+	transition: all .2s ease-in-out;
+}	
+div.s_cl_img>img:hover {
+	transform: scale(1.04);
+	transition: all .2s ease-in-out;
+}
+div.s_cl_txt{
+	width: 100%;
+	padding-top : 20px;
+}
+div.s_cl_txt>h5{
+	height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	margin-bottom: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+div.s_cl_txt>p{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+div.s_cl_txt>p>span{
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+
+}

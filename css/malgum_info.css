@@ -1,0 +1,186 @@
+
+/*첫번째 상단 영역 스타일*/
+div.mi_headerContent{
+	width: 100%;
+	position: relative;
+
+}
+div.mi_hc_box{
+	width: 1170px;
+	margin : 0px auto;
+	margin-top : 100px;
+}
+div.mi_hc_title>h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 60px;
+}
+div.mi_hc_content>h3{
+	font-weight: bold;
+	font-size: 30px;
+	color : #252525;
+	padding: 0px 52px 30px 52px;
+}
+div.mi_hc_content>p {
+	font-weight: lighter;
+	color : #656565;
+	padding: 0px 10px 80px 52px;
+}
+
+/*맑음의 사업분야 스타일*/
+div.mi_field{
+	width: 100%;
+	position: relative;
+	background-color: #2CC1EA;
+}
+div.mi_fieldBox{
+	width: 1170px;
+	position : relative;
+	margin : 0 auto;
+}
+div.mi_fieldTitle>h3{
+	font-size: 30px;
+	font-weight: bold;
+	color : white;
+	padding-top: 100px;
+	padding-left: 80px;
+}
+/*사업분야 리스트 스타일*/
+div.mi_fieldListBox{
+	padding: 0px 50px;
+	padding-top: 60px;
+	padding-bottom : 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+div.mi_fieldList{
+	width: 31%;
+	border-top: 5px solid white;
+}
+div.fieldList_title{
+	padding: 30px 0px 20px 0px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 2px solid white;
+}
+div.fieldList_title>img {
+	width: 75px;
+	height: 75px;
+
+}
+div.fieldList_title_txt{
+	padding-left: 10px;
+}
+div.fieldList_title_txt>h3{
+	font-size: 28px;
+	font-weight: bold;
+	padding-top : 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+div.fieldList_title_txt>p{
+	font-weight: lighter;
+	font-size: 18px;
+	color : #2C2929;
+}	
+
+div.fieldList_content{
+	padding-top : 50px;
+}
+div.fieldList_content>b {
+	color : white;
+	font-weight: light;
+}
+div.fieldList_content>p{
+	font-size: 15px;
+	color : #434343;
+}
+
+div.mi_distinction{
+	width: 100%;
+	height: 320px;
+	background: url("../img/malgum_info/bg_faith.png") no-repeat center / cover;
+	position : relative;
+	z-index: 1;
+}
+div.mi_distinction::after {
+	content : '';
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top : 0px;
+	z-index: -1;
+}
+div.mi_distinctionBox{
+	width: 1170px;
+	margin : 0 auto;
+}
+div.mi_mi_distinction_title {
+	position : relative;
+}
+div.mi_mi_distinction_title>h3{
+	text-align: center;
+	color : white;
+	padding-top : 100px;
+	padding-bottom: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	position : relative;
+}
+div.mi_mi_distinction_title>h3::before{
+	content: '';
+	display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 100%;
+    left : 470px;
+    top : 10px;
+}
+
+div.mi_mi_distinction_content>p{
+	text-align: center;
+	color : white;
+	font-size: 15px;
+}
+
+/*맑음 소개 컨텐츠 스타일*/
+div.mi_infoContents{
+	width: 100%;
+	position  :relative;
+	padding: 100px 0px;
+}
+div.mi_infoContentsBox{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+div.mi_infoContentsList{
+	width: 48%;
+	border: 1px solid #B3B3B3;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+div.mi_ic_listImg{
+	padding-top : 70px;
+	padding-bottom: 30px;
+}
+div.mi_ic_title>h3{
+	font-size: 33px;
+	font-weight: bold;
+}
+div.mi_ic_content{
+	padding: 30px 50px 50px 50px;
+}

@@ -243,11 +243,14 @@
 	}
 	div.wa_cont5_content ul li{
 		width: 32%;
+		max-height: 370px;
 	}
 	div.wa_cont5_content ul li:nth-child(9){
 		display: block;
 		visibility: hidden;
 	}
+
+	
 
 	/************************
 	웹 에이전시 6번째 컨텐츠 스타일 영역 
@@ -416,6 +419,18 @@
 	}
 
 }	
+/*********************************
+	화면이 width 940미만일 때 
+**********************************/
+@media screen and (max-width : 940px){
+	div.wa_cont5_content ul li{
+		max-height: 320px;
+	}
+	div.wa_cont5_list_txt{
+		padding: 20px 10px;
+	}
+
+}
 
 /*********************************
 	화면이 width 770 미만일 때 
@@ -648,6 +663,7 @@
 
 }
 
+
 /*********************************
 	화면이 width 770 미만일 때 
 **********************************/
@@ -655,6 +671,34 @@
 	div.headerTxt{
 		padding-top: 0px;
 		height: 80px;
+	}
+
+}
+
+/*********************************
+	화면이 width 740미만일 때 
+**********************************/
+@media screen and (max-width : 740px){
+	div.wa_cont5_content ul li{
+		width: 48%;
+		max-height: 400px;
+	}
+	div.wa_cont5_list_txt{
+		padding: 20px 10px;
+	}
+
+}
+
+/*********************************
+	화면이 width 500미만일 때 
+**********************************/
+@media screen and (max-width : 500px){
+	div.wa_cont5_content ul li{
+		width: 100%;
+		max-height: 500px;
+	}
+	div.wa_cont5_list_txt{
+		padding: 20px 10px;
 	}
 
 }

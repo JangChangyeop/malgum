@@ -9,6 +9,7 @@ body, html {
 h3.h3_viewMax_770{
 	display: none;
 }
+
 /*****************************
 	web_agency_content style
 *******************************/
@@ -425,6 +426,7 @@ div.wa_cont5_content ul li {
 div.wa_cont5_content ul li:nth-child(9){
 	display: none;
 }
+
 /*헤드 이미지 스타일*/
 div.wa_cont5_list_headImg>img {
 	width: 100%;
@@ -433,13 +435,67 @@ div.wa_cont5_list_headImg>img {
 
 /*텍스트 스타일*/
 div.wa_cont5_list_txt{
-	padding: 20px 15px;
+	padding: 30px 20px;
+
 }
+div.wa_cont5_list_txt{
+	background-color: white;
+	height: 100%;
+	z-index: 1;
+}
+div.wa_cont5_list_txt.active{
+	width: 100%;
+	position : absolute;
+	
+	background-color: white;
+	transition: all 1s;
+	animation: txtMoveUp 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes txtMoveUp{
+	from{top : 100%}
+	to {top : 0;}
+}
+
+div.wa_cont5_list_txt>h5{
+	font-size: 18px;
+  	font-weight: bold;
+}
+
+h5.wa_cont5_list_txt_h5{
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	
+}
+div.wa_cont5_list_txt>p{
+	font-size: 13.5px;
+	margin : 0px;
+	font-weight: lighter
+}
+div.list_txt_content{
+	margin-top : 25px;
+}
+div.list_txt_content>p{
+	width: 0px;
+	overflow: hidden;
+	font-size: 13.5px;
+	margin : 0px;
+	font-weight: lighter;
+	transition : all 0.15s;
+}
+div.active>div.list_txt_content>p{
+	width: 100% !important;
+	font-size: 13.5px;
+}
+
 /*바텀 이미지 스타일*/
 div.wa_cont5_list_bottomImg{
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
+	z-index: 1;
 }
 /*더보기 스타일*/
 div.wa_cont5_plusContent{
